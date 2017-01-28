@@ -5,7 +5,7 @@
   margin-right: auto;
 }
 #horizontal-scroll {
-width: 1080px;
+width: auto;
 height: 200px;
 margin-top: 260px;
 margin-left: 0px;
@@ -17,12 +17,12 @@ animation: backgroundScroll 20s linear infinite;
 
 @-webkit-keyframes backgroundScroll {
 from {background-position: 0 0;}
-to {background-position: -2160px 0;}
+to {background-position: -1080px 0;}
 }
 
 @keyframes backgroundScroll {
 from {background-position: 0 0;}
-to {background-position: -2160px 0;}
+to {background-position: -1080px 0;}
 }
 a {
   color: pink;
