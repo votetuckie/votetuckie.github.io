@@ -29,7 +29,8 @@ header{
 
 .zone{
   padding: 0;
-  margin: 0;
+  width: 90%;
+  margin: auto;
 }
 #hi, #top-half-, #bot-half{
   padding: 0;
