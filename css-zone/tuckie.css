@@ -11,8 +11,8 @@ height: 200px;
 margin-top: 200px;
 padding: 0;
 background: url(../pics/bottomclouds.png);
--webkit-animation: backgroundScroll 999999s linear infinite;
-animation: backgroundScroll 999999s linear infinite;
+-webkit-animation: backgroundScroll 99s linear infinite;
+animation: backgroundScroll 99s linear infinite;
 }
 
 @-webkit-keyframes backgroundScroll {
