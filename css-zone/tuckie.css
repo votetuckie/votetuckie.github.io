@@ -6,10 +6,12 @@ body{
   padding: 0;
   margin: 0;
 }
+
 header{
   width: 100%;
   padding: 0;
 }
+
 .logo{
   display: block;
   margin-top: 180px;
@@ -44,9 +46,10 @@ animation: backgroundScroll 40s ease-in-out infinite;
   50% { background-position: 100% 0; }
   100% { background-position: 0% 0; }
 }
+
 a {
   color: pink;
-        }
+}
 
 a:hover{
   color: blue;
