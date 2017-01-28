@@ -3,7 +3,6 @@ body{
   background: url(../pics/checkers.png);
   background-attachment:fixed;
   width: 100%;
-  height: 380px;
   padding: 0;
   margin: 0;
 }
@@ -40,6 +39,9 @@ header{
 width: 100%;
 height: 200px;
 margin-top: 200px;
+-moz-box-shadow: 0 -12px 19px 14px #000000;
+-webkit-box-shadow: 0 -12px 19px 14px #000000;
+box-shadow: 0 -12px 19px 14px #000000;
 padding: 0;
 background: url(../pics/bottomclouds.png);
 -webkit-animation: backgroundScroll 40s ease-in-out infinite;
