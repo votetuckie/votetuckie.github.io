@@ -10,3 +10,19 @@
   animation-timing-function: cubic-bezier(0.44, 0.052, 0.50, 0.980);
 
 }
+
+@media (max-width: 400px) {
+      .logo {min-height: 200px;}
+    }
+
+@keyframes logo {
+            0% {
+                -webkit-transform: translate3d(0px, 0px, 0px);
+                -moz-transform: translate(0px, 0px);
+            }
+
+            100% {
+                -webkit-transform: translate3d(0px, -10px, 0px);
+                -moz-transform: translate(0px, -10px);
+            }
+        }
