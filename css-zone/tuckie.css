@@ -37,7 +37,13 @@ header{
 #shadow{
   background: url(../pics/shadow.png);
   background-repeat: repeat-x;
-  margin-bottom: 30px;
+}
+#top-half{
+  background-color: #baebae;
+  margin-left: 10%;
+  width: 200px;
+  border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
 }
 
 #horizontal-scroll {
