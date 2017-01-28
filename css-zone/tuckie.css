@@ -23,6 +23,7 @@ header{
 .main{
   background-color: #EDF7FF;
   padding: 0;
+  margin: 0;
 }
 
 #horizontal-scroll {
