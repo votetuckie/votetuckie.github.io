@@ -1,10 +1,26 @@
 .logo{
   display: block;
-  margin-top: 100px;
+  margin-top: 180px;
   margin-left: auto;
   margin-right: auto;
 }
+#horizontal-scroll {
+width: 100%px;
+height: 200px;
+background: url(../pics/bottomclouds.png);
+-webkit-animation: backgroundScroll 20s linear infinite;
+animation: backgroundScroll 20s linear infinite;
+}
 
+@-webkit-keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -400px 0;}
+}
+
+@keyframes backgroundScroll {
+from {background-position: 0 0;}
+to {background-position: -400px 0;}
+}
 a {
   color: pink;
         }
