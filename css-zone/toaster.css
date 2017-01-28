@@ -1,0 +1,311 @@
+.toaster {
+	position:absolute;
+	width:64px;
+	height:64px;
+	background-image:url("https://www.bryanbraun.com/assets/images/toaster-sprite.gif");
+}
+.toast {
+	position:absolute;
+	width:64px;
+	height:64px;
+	background-image:url("https://www.bryanbraun.com/assets/images/toast1.gif");
+}
+.t1 {
+	-webkit-animation:flap .2s steps(4) infinite alternate,fly 10s linear infinite;
+	-moz-animation:flap .2s steps(4) infinite alternate,fly 10s linear infinite;
+	-ms-animation:flap .2s steps(4) infinite alternate,fly 10s linear infinite;
+	-o-animation:flap .2s steps(4) infinite alternate,fly 10s linear infinite;
+	animation:flap .2s steps(4) infinite alternate,fly 10s linear infinite;
+}
+.t2 {
+	-webkit-animation:flap .2s steps(4) infinite alternate-reverse,fly 16s linear infinite;
+	-moz-animation:flap .2s steps(4) infinite alternate-reverse,fly 16s linear infinite;
+	-ms-animation:flap .2s steps(4) infinite alternate-reverse,fly 16s linear infinite;
+	-o-animation:flap .2s steps(4) infinite alternate-reverse,fly 16s linear infinite;
+	animation:flap .2s steps(4) infinite alternate-reverse,fly 16s linear infinite;
+}
+.t3 {
+	-webkit-animation:flap .2s steps(4) infinite alternate,fly 24s linear infinite;
+	-moz-animation:flap .2s steps(4) infinite alternate,fly 24s linear infinite;
+	-ms-animation:flap .2s steps(4) infinite alternate,fly 24s linear infinite;
+	-o-animation:flap .2s steps(4) infinite alternate,fly 24s linear infinite;
+	animation:flap .2s steps(4) infinite alternate,fly 24s linear infinite;
+}
+.t4 {
+	-webkit-animation:flap .2s steps(4) infinite alternate,fly 10s 5s linear infinite;
+	-moz-animation:flap .2s steps(4) infinite alternate,fly 10s 5s linear infinite;
+	-ms-animation:flap .2s steps(4) infinite alternate,fly 10s 5s linear infinite;
+	-o-animation:flap .2s steps(4) infinite alternate,fly 10s 5s linear infinite;
+	animation:flap .2s steps(4) infinite alternate,fly 10s 5s linear infinite;
+}
+.t5 {
+	-webkit-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 4s linear infinite;
+	-moz-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 4s linear infinite;
+	-ms-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 4s linear infinite;
+	-o-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 4s linear infinite;
+	animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 4s linear infinite;
+}
+.t6 {
+	-webkit-animation:flap .2s steps(4) infinite alternate,fly 24s 8s linear infinite;
+	-moz-animation:flap .2s steps(4) infinite alternate,fly 24s 8s linear infinite;
+	-ms-animation:flap .2s steps(4) infinite alternate,fly 24s 8s linear infinite;
+	-o-animation:flap .2s steps(4) infinite alternate,fly 24s 8s linear infinite;
+	animation:flap .2s steps(4) infinite alternate,fly 24s 8s linear infinite;
+}
+.t7 {
+	-webkit-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 12s linear infinite;
+	-moz-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 12s linear infinite;
+	-ms-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 12s linear infinite;
+	-o-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 12s linear infinite;
+	animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 12s linear infinite;
+}
+.t8 {
+	-webkit-animation:flap .2s steps(4) infinite alternate,fly 24s 16s linear infinite;
+	-moz-animation:flap .2s steps(4) infinite alternate,fly 24s 16s linear infinite;
+	-ms-animation:flap .2s steps(4) infinite alternate,fly 24s 16s linear infinite;
+	-o-animation:flap .2s steps(4) infinite alternate,fly 24s 16s linear infinite;
+	animation:flap .2s steps(4) infinite alternate,fly 24s 16s linear infinite;
+}
+.t9 {
+	-webkit-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 20s linear infinite;
+	-moz-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 20s linear infinite;
+	-ms-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 20s linear infinite;
+	-o-animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 20s linear infinite;
+	animation:flap .2s steps(4) infinite alternate-reverse,fly 24s 20s linear infinite;
+}
+.tst1 {
+	-webkit-animation:fly 10s linear infinite;
+	-moz-animation:fly 10s linear infinite;
+	-ms-animation:fly 10s linear infinite;
+	-o-animation:fly 10s linear infinite;
+	animation:fly 10s linear infinite;
+}
+.tst2 {
+	-webkit-animation:fly 16s linear infinite;
+	-moz-animation:fly 16s linear infinite;
+	-ms-animation:fly 16s linear infinite;
+	-o-animation:fly 16s linear infinite;
+	animation:fly 16s linear infinite;
+}
+.tst3 {
+	-webkit-animation:fly 24s linear infinite;
+	-moz-animation:fly 24s linear infinite;
+	-ms-animation:fly 24s linear infinite;
+	-o-animation:fly 24s linear infinite;
+	animation:fly 24s linear infinite;
+}
+.tst4 {
+	-webkit-animation:fly 24s 12s linear infinite;
+	-moz-animation:fly 24s 12s linear infinite;
+	-ms-animation:fly 24s 12s linear infinite;
+	-o-animation:fly 24s 12s linear infinite;
+	animation:fly 24s 12s linear infinite;
+}
+.p6 {
+	right:-2%;
+	top:-10%;
+}
+.p7 {
+	right:10%;
+	top:-12%;
+}
+.p8 {
+	right:20%;
+	top:-18%;
+}
+.p9 {
+	right:30%;
+	top:-13%;
+}
+.p10 {
+	right:40%;
+	top:-17%;
+}
+.p11 {
+	right:50%;
+	top:-11%;
+}
+.p12 {
+	right:60%;
+	top:-20%;
+}
+.p13 {
+	right:-10%;
+	top:10%;
+}
+.p14 {
+	right:-13%;
+	top:20%;
+}
+.p15 {
+	right:-17%;
+	top:30%;
+}
+.p16 {
+	right:-15%;
+	top:50%;
+}
+.p17 {
+	right:-20%;
+	top:70%;
+}
+.p18 {
+	right:0%;
+	top:-26%;
+}
+.p19 {
+	right:10%;
+	top:-20%;
+}
+.p20 {
+	right:20%;
+	top:-36%;
+}
+.p21 {
+	right:30%;
+	top:-24%;
+}
+.p22 {
+	right:40%;
+	top:-33%;
+}
+.p23 {
+	right:60%;
+	top:-40%;
+}
+.p24 {
+	right:-26%;
+	top:10%;
+}
+.p25 {
+	right:-36%;
+	top:30%;
+}
+.p26 {
+	right:-29%;
+	top:50%;
+}
+.p27 {
+	right:0;
+	top:-46%;
+}
+.p28 {
+	right:10%;
+	top:-56%;
+}
+.p29 {
+	right:20%;
+	top:-49%;
+}
+.p30 {
+	right:30%;
+	top:-60%;
+}
+.p31 {
+	right:-46%;
+	top:10%;
+}
+.p32 {
+	right:-56%;
+	top:20%;
+}
+.p33 {
+	right:-49%;
+	top:30%;
+}
+@-webkit-keyframes flap {
+	from {
+		background-position:0px;
+	}
+	to {
+		background-position:-256px;
+	}
+}
+@-moz-keyframes flap {
+	from {
+		background-position:0px;
+	}
+	to {
+		background-position:-256px;
+	}
+}
+@-o-keyframes flap {
+	from {
+		background-position:0px;
+	}
+	to {
+		background-position:-256px;
+	}
+}
+@keyframes flap {
+	from {
+		background-position:0px;
+	}
+	to {
+		background-position:-256px;
+	}
+}
+@-webkit-keyframes fly {
+	from {
+		-webkit-transform:translate(0,0);
+		-moz-transform:translate(0,0);
+		-o-transform:translate(0,0);
+		-ms-transform:translate(0,0);
+		transform:translate(0,0);
+	}
+	to {
+		-webkit-transform:translate(-1600px,1600px);
+		-moz-transform:translate(-1600px,1600px);
+		-o-transform:translate(-1600px,1600px);
+		-ms-transform:translate(-1600px,1600px);
+		transform:translate(-1600px,1600px);
+	}
+}
+@-moz-keyframes fly {
+	from {
+		-webkit-transform:translate(0,0);
+		-moz-transform:translate(0,0);
+		-o-transform:translate(0,0);
+		-ms-transform:translate(0,0);
+		transform:translate(0,0);
+	}
+	to {
+		-webkit-transform:translate(-1600px,1600px);
+		-moz-transform:translate(-1600px,1600px);
+		-o-transform:translate(-1600px,1600px);
+		-ms-transform:translate(-1600px,1600px);
+		transform:translate(-1600px,1600px);
+	}
+}
+@-o-keyframes fly {
+	from {
+		-webkit-transform:translate(0,0);
+		-moz-transform:translate(0,0);
+		-o-transform:translate(0,0);
+		-ms-transform:translate(0,0);
+		transform:translate(0,0);
+	}
+	to {
+		-webkit-transform:translate(-1600px,1600px);
+		-moz-transform:translate(-1600px,1600px);
+		-o-transform:translate(-1600px,1600px);
+		-ms-transform:translate(-1600px,1600px);
+		transform:translate(-1600px,1600px);
+	}
+}
+@keyframes fly {
+	from {
+		-webkit-transform:translate(0,0);
+		-moz-transform:translate(0,0);
+		-o-transform:translate(0,0);
+		-ms-transform:translate(0,0);
+		transform:translate(0,0);
+	}
+	to {
+		-webkit-transform:translate(-1600px,1600px);
+		-moz-transform:translate(-1600px,1600px);
+		-o-transform:translate(-1600px,1600px);
+		-ms-transform:translate(-1600px,1600px);
+		transform:translate(-1600px,1600px);
+	}
+}
