@@ -21,17 +21,19 @@ margin-top: 200px;
 padding: 0;
 background: url(../pics/bottomclouds.png);
 -webkit-animation: backgroundScroll 40s linear infinite;
-animation: backgroundScroll 40s linear infinite;
+animation: backgroundScroll 40s ease-in-out infinite;
 }
 
 @-webkit-keyframes backgroundScroll {
-  from { background-position: 0 0; }
-  	to { background-position: 100% 0; }
+  0% { background-position: 0 0; }
+  50% { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
 }
 
 @keyframes backgroundScroll {
-  from { background-position: 0 0; }
-  	to { background-position: 100% 0; }
+  0% { background-position: 0 0; }
+  50% { background-position: 100% 0; }
+  100% { background-position: 0% 0; }
 }
 a {
   color: pink;
