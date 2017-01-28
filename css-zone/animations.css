@@ -808,6 +808,40 @@ floating
 	}
 }
 
+.floating2{
+	animation-name: floating2;
+	-webkit-animation-name: floating2;
+
+	animation-duration: 2s;
+	-webkit-animation-duration: 2s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating2 {
+	0% {
+		transform: translateX(0%);
+	}
+	50% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@-webkit-keyframes floating2 {
+	0% {
+		-webkit-transform: translateX(0%);
+	}
+	50% {
+		-webkit-transform: translateX(100%);
+	}
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
 /*
 ==============================================
 tossing
