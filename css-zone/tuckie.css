@@ -1,6 +1,7 @@
 body{
   font-family: 'Roboto', sans-serif;
   background: url(../pics/checkers.png);
+  background-attachment:fixed;
   width: 100%;
   height: 380px;
   padding: 0;
