@@ -8,6 +8,8 @@
 width: 100%;
 height: 200px;
 margin-top: 180px;
+margin-left: auto;
+margin-right: auto;
 background: url(../pics/bottomclouds.png);
 -webkit-animation: backgroundScroll 20s linear infinite;
 animation: backgroundScroll 20s linear infinite;
