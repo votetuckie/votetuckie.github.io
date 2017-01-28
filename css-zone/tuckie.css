@@ -16,12 +16,12 @@ animation: backgroundScroll 9s linear infinite;
 
 @-webkit-keyframes backgroundScroll {
   from { background-position: 0 0; }
-  	to { background-position: -100% 0; }
+  	to { background-position: 100% 0; }
 }
 
 @keyframes backgroundScroll {
   from { background-position: 0 0; }
-  	to { background-position: -100% 0; }
+  	to { background-position: 100% 0; }
 }
 a {
   color: pink;
