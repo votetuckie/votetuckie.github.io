@@ -59,6 +59,7 @@ header{
 	border-bottom-right-radius: 4px;
 }
 #bot-half p{
+  margin-left: 20px;
   padding-top:10px;
 }
 #horizontal-scroll {
