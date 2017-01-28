@@ -8,7 +8,8 @@
 width: 100%;
 height: auto;
 margin-top: 260px;
-background: url(../pics/bottomclouds.png) repeat-y;
+padding: 0;
+background: url(../pics/bottomclouds.png);
 -webkit-animation: backgroundScroll 99999999s linear infinite;
 animation: backgroundScroll 99999999s linear infinite;
 }
