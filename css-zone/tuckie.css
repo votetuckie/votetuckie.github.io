@@ -19,7 +19,8 @@ header{
 }
 
 .main{
-  background-color: lightgrey
+  background-color: #EDF7FF;
+  padding: 0;
 }
 
 #horizontal-scroll {
