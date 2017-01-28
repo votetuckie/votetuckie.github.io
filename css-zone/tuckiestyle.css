@@ -1,0 +1,11 @@
+.logo{
+  background-size: contain;
+  width: 90%;
+  height: 100%;
+  max-width: 626px;
+  min-height: 433px;
+  margin: 0px auto;
+  animation: logo 2s infinite alternate;
+  animation-timing-function: cubic-bezier(0.44, 0.052, 0.50, 0.980);
+
+}
