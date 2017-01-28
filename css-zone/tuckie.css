@@ -36,6 +36,7 @@ header{
 }
 #shadow{
   background: url(../pics/shadow.png);
+  background-repeat: repeat-x;
 }
 
 #horizontal-scroll {
