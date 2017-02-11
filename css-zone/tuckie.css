@@ -24,6 +24,9 @@ header{
   background-color: #EDF7FF;
   padding-top: 10px;
   margin: 0;
+  -moz-box-shadow: inset 1px 11px 31px -20px #000000;
+  -webkit-box-shadow: inset 1px 11px 31px -20px #000000;
+  box-shadow: inset 1px 11px 31px -20px #000000;
 }
 
 .zone{
