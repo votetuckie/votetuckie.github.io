@@ -34,34 +34,6 @@ header{
   padding: 0;
   margin: auto;
 }
-#hi {
-  margin:2em 0;
-  box-shadow:0 0 5px;
-  min-height:2em;
-  position:relative;
-  background:white;
-}
-#hi:before, #hi:after {
-  content:'';
-  position:absolute;
-  height:2em;
-  width:2em;
-  padding:1em;
-  top:0;
-  left:0;
-  background:inherit;
-  border-radius:100%;
-  margin:-1em 2em;
-  z-index:1;
-}
-#hi:before {
-  box-shadow:inherit;
-  z-index:-1;
-}
-#hi>* {
-  position:relative;
-  z-index:2;
-}
 
 #hi h1, #hi p{
   padding: 0;
