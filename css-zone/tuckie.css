@@ -94,14 +94,40 @@ animation: backgroundScroll 40s ease-in-out infinite;
   100% { background-position: 0% 0; }
 }
 
-a {
-  color: pink;
+a,
+a:visited,
+a:hover,
+a:active {
+  -webkit-backface-visibility: hidden ;
+  position: relative ;
+  transition: 0.5s color ease !important;
+  text-decoration: none;
 }
 
-a:hover{
-  color: blue;
+a:hover {
+  color:   #556B2F
 }
 
-a:active{
-  color: lime;
+a.before:before,
+a.after:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+}
+
+a.before:before {
+  top: -0.25em;
+}
+
+a.after:after {
+  bottom: -0.25em;
+}
+
+a.before:before,
+a.after:after {
+  height: 1px;
+  height: 0.1em;
+  width: 0;
+  background:      #556B2F
 }
