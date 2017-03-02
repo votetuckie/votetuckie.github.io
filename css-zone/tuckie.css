@@ -103,9 +103,11 @@ a:active {
   transition: 0.5s color ease !important;
   text-decoration: none;
 }
-
+a{
+  color: pink;
+}
 a:hover {
-  color:   #556B2F
+  color: lime;
 }
 
 a.before:before,
