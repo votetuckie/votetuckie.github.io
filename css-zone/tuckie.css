@@ -117,19 +117,3 @@ a.after:after {
   -webkit-backface-visibility: hidden;
   position: absolute;
 }
-
-a.before:before {
-  top: -0.25em;
-}
-
-a.after:after {
-  bottom: -0.25em;
-}
-
-a.before:before,
-a.after:after {
-  height: 1px;
-  height: 0.1em;
-  width: 0;
-  background:      #556B2F
-}
