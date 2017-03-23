@@ -28,9 +28,11 @@ a, a:visited, a:hover, a:active {
   transition: 0.5s color ease !important;
   text-decoration: none;
 }
+
 a{
   color: pink;
 }
+
 a:hover {
   color: lavender;
 }
