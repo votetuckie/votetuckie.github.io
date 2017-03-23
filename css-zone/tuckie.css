@@ -1,3 +1,6 @@
+
+/* global/html defaultspace */
+
 body{
   font-family: 'Roboto', sans-serif;
   background: url(../pics/checkers.png);
@@ -11,6 +14,35 @@ header{
   width: 100%;
   padding: 0;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+a, a:visited, a:hover, a:active {
+  -webkit-backface-visibility: hidden ;
+  position: relative ;
+  transition: 0.5s color ease !important;
+  text-decoration: none;
+}
+a{
+  color: pink;
+}
+a:hover {
+  color: lavender;
+}
+
+a.before:before, a.after:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+}
+
+/* global/html defaultspace */
 
 .logo{
   display: block;
@@ -92,28 +124,4 @@ animation: backgroundScroll 40s ease-in-out infinite;
   0% { background-position: 0 0; }
   50% { background-position: 100% 0; }
   100% { background-position: 0% 0; }
-}
-
-a,
-a:visited,
-a:hover,
-a:active {
-  -webkit-backface-visibility: hidden ;
-  position: relative ;
-  transition: 0.5s color ease !important;
-  text-decoration: none;
-}
-a{
-  color: pink;
-}
-a:hover {
-  color: lime;
-}
-
-a.before:before,
-a.after:after {
-  content: "";
-  transition: 0.5s all ease;
-  -webkit-backface-visibility: hidden;
-  position: absolute;
 }
