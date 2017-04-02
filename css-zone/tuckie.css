@@ -67,15 +67,13 @@ a.before:before, a.after:after {
   margin: 0;
 }
 
-#pagebar{
-  padding-left: 10%;
-  padding-right: 10%;
-}
 #pages li {
     list-style-type: none;
-    padding: 20px;
+    margin-top: 0px;
     overflow: hidden;
     display: inline;
+    float: left;
+    width: 20%;
 }
 
 #top-half{
