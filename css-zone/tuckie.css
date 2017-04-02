@@ -68,26 +68,32 @@ a.before:before, a.after:after {
   padding: 0;
   margin: 0;
 }
+#pagebar{
+  padding-top: 30px;
+   height: auto;
+}
 
 #pages {
    text-align: center;
    width: 100%;
    padding: 0;
    margin: 0;
+   padding-bottom: 10px;
 }
 
 #pages:after {
     content: '';
     display: inline-block;
     width: 100%;
-       padding: 0;
-   margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 #pages li {
-    display: inline-block;
-       padding: 0;
+   display: inline-block;
+   padding: 0;
    margin: 0;
+   max-width: 20%;
 }
 
 #top-half{
@@ -124,7 +130,6 @@ a.before:before, a.after:after {
 #horizontal-scroll {
 width: 100%;
 height: 200px;
-margin-top: 200px;
 padding: 0;
 background: url(../pics/bottomclouds.png);
 -webkit-animation: backgroundScroll 40s ease-in-out infinite;
@@ -142,4 +147,12 @@ animation: backgroundScroll 40s ease-in-out infinite;
   0% { background-position: 0 0; }
   50% { background-position: 100% 0; }
   100% { background-position: 0% 0; }
+}
+
+@media(max-width: 768px){
+
+  #pages li {
+    zoom: 50%;
+  }
+
 }
