@@ -123,9 +123,13 @@ a.before:before, a.after:after {
 #windows li{
   list-style: none;
   display: inline-block;
-  width: 35%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 45%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+#socialz h1{
+  margin-left: 20px;
 }
 
 #socialz{
@@ -133,7 +137,7 @@ a.before:before, a.after:after {
   padding-top: 10px;
   margin-top: 20px;
   padding-bottom:10px;
-  text-align: right;
+  text-align: left;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -147,6 +151,10 @@ a.before:before, a.after:after {
   text-align: right;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
+}
+
+#top-half h1, #top-half p{
+  margin-right: 20px;
 }
 
 #bot-half{
@@ -192,7 +200,6 @@ animation: backgroundScroll 40s ease-in-out infinite;
   #windows li{
     width: 80%;
     padding-top: 20px;
-    margin-left: 10%;
   }
 
   #pages img {
