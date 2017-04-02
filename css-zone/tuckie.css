@@ -27,7 +27,7 @@ a{
 }
 
 a:hover {
-  color: lavender;
+  color: #b39db7;
 }
 
 a.before:before, a.after:after {
@@ -67,9 +67,13 @@ a.before:before, a.after:after {
   margin: 0;
 }
 
-#pages {
+#pagebar{
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#pages li {
     list-style-type: none;
-    padding: 10%;
+    padding: 20px;
     overflow: hidden;
     display: inline;
 }
