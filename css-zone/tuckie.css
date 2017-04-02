@@ -44,7 +44,9 @@ a.before:before, a.after:after {
   margin-top: 220px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 10px;
   padding: 0;
+  max-width: 100%;
 }
 
 .main{
@@ -67,27 +69,27 @@ a.before:before, a.after:after {
   margin: 0;
 }
 
-#pages ul{
+#pages {
+   text-align: center;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+}
+
+#pages:after {
+    content: '';
+    display: inline-block;
     width: 100%;
-    list-style: none;
-    padding: 0;
-    margin: 15px 0 5px 0;
+       padding: 0;
+   margin: 0;
 }
-#pages li a{
-    display: block;
-    text-align: center;
-    /* Here we can safely apply horizontal padding/margins because we haven't
-       explicitly set a width on the element */
-}
+
 #pages li {
-    list-style-type: none;
-    margin-top: 0px;
-    overflow: hidden;
-    display: inline;
-    float: left;
-    margin: 12px 0 0 0;
-    padding: 6px 0;
+    display: inline-block;
+       padding: 0;
+   margin: 0;
 }
+
 #top-half{
   background-color: #baebae;
   padding-top: 10px;
