@@ -10,6 +10,14 @@ body{
   margin: 0;
 }
 
+h1{
+  font-size: 24;
+}
+
+p{
+  font-size: 16;
+}
+
 header{
   width: 100%;
   padding: 0;
