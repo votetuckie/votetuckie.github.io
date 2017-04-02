@@ -15,11 +15,10 @@ header{
   padding: 0;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+li {
+  display: inline;
+  list-style-type: none;
+  padding-right: 5%;
 }
 
 a, a:visited, a:hover, a:active {
@@ -72,6 +71,12 @@ a.before:before, a.after:after {
 #hi h1, #hi p{
   padding: 0;
   margin: 0;
+}
+
+#pages {
+    list-style-type: none;
+    padding: 10%;
+    overflow: hidden;
 }
 
 #top-half{
