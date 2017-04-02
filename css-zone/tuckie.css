@@ -152,6 +152,10 @@ animation: backgroundScroll 40s ease-in-out infinite;
 
 @media(max-width: 768px){
 
+  #pages img{
+    zoom: 50%
+  }
+
   #top-half{
     margin-left: 10%;
     width: 80%;
