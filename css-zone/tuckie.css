@@ -70,7 +70,8 @@ a.before:before, a.after:after {
 }
 #pagebar{
   padding-top: 30px;
-   height: auto;
+  height: auto;
+  widht: 100%;
 }
 
 #pages {
@@ -93,7 +94,6 @@ a.before:before, a.after:after {
    display: inline-block;
    padding: 0;
    margin: 0;
-   max-width: 20%;
 }
 
 #top-half{
@@ -155,4 +155,16 @@ animation: backgroundScroll 40s ease-in-out infinite;
     zoom: 50%;
   }
 
+
+  #top-half{
+    margin-left: 10%;
+    width: 80%;
+    max-width: 80%;
+  }
+
+  #bot-half{
+    margin-left: 10%;
+    width: 80%;
+    max-width: 80%;
+  }
 }
