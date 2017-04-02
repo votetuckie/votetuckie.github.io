@@ -108,7 +108,7 @@ a.before:before, a.after:after {
   height: auto;
   list-style: none;
   text-align: center;
-
+  padding-right: 40px;
   padding-bottom: 10px;
 }
 
@@ -198,5 +198,4 @@ animation: backgroundScroll 40s ease-in-out infinite;
   #pages img {
     zoom: 50%
   }
-
 }
