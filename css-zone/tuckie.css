@@ -67,15 +67,27 @@ a.before:before, a.after:after {
   margin: 0;
 }
 
+#pages ul{
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 5px 0;
+}
+#pages li a{
+    display: block;
+    text-align: center;
+    /* Here we can safely apply horizontal padding/margins because we haven't
+       explicitly set a width on the element */
+}
 #pages li {
     list-style-type: none;
     margin-top: 0px;
     overflow: hidden;
     display: inline;
     float: left;
-    width: 20%;
+    margin: 12px 0 0 0;
+    padding: 6px 0;
 }
-
 #top-half{
   background-color: #baebae;
   padding-top: 10px;
