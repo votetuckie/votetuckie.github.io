@@ -173,17 +173,23 @@ animation: backgroundScroll 40s ease-in-out infinite;
 
 @media(max-width: 768px){
 
-  #pages img{
+  #pages img {
     zoom: 50%
   }
 
-  #top-half{
+  #socialz {
     margin-left: 10%;
     width: 80%;
     max-width: 80%;
   }
 
-  #bot-half{
+  #top-half {
+    margin-left: 10%;
+    width: 80%;
+    max-width: 80%;
+  }
+
+  #bot-half {
     margin-left: 10%;
     width: 80%;
     max-width: 80%;
