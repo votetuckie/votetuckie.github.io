@@ -96,6 +96,7 @@ a.before:before, a.after:after {
    margin: 0;
 }
 
+
 #top-half{
   background-color: #baebae;
   padding-top: 10px;
@@ -150,11 +151,6 @@ animation: backgroundScroll 40s ease-in-out infinite;
 }
 
 @media(max-width: 768px){
-
-  #pages li {
-    zoom: 50%;
-  }
-
 
   #top-half{
     margin-left: 10%;
