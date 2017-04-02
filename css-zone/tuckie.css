@@ -192,29 +192,11 @@ animation: backgroundScroll 40s ease-in-out infinite;
   #windows li{
     width: 80%;
     padding-top: 20px;
-    margin-left: 0%;
-    margin-right: 0%;
+    margin-left: 10%;
   }
 
   #pages img {
     zoom: 50%
   }
 
-  #socialz {
-    margin-left: 10%;
-    width: 80%;
-    max-width: 80%;
-  }
-
-  #top-half {
-    margin-left: 10%;
-    width: 80%;
-    max-width: 80%;
-  }
-
-  #bot-half {
-    margin-left: 10%;
-    width: 80%;
-    max-width: 80%;
-  }
 }
