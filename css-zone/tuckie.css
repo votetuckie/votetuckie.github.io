@@ -79,7 +79,7 @@ a.before:before, a.after:after {
 #pagebar{
   padding-top: 30px;
   height: auto;
-  widht: 100%;
+  width: 100%;
 }
 
 #pages {
@@ -102,6 +102,31 @@ a.before:before, a.after:after {
    display: inline-block;
    padding: 0;
    margin: 0;
+}
+
+#windows{
+  height: auto;
+  width: 100%;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+#windows:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#windows li{
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 
 #socialz{
