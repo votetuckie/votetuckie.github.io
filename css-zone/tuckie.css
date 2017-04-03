@@ -148,6 +148,7 @@ a.before:before, a.after:after {
 
 #socialz h1{
   margin-left: 20px;
+  margin-right: 20px;
 }
 
 #contact{
@@ -194,6 +195,7 @@ a.before:before, a.after:after {
 
 #top-half h1, #top-half p{
   margin-right: 20px;
+  margin-left: 20px;
   padding-top: 5px;
 }
 
