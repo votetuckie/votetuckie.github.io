@@ -157,6 +157,10 @@ a.before:before, a.after:after {
   margin-right: 20px;
 }
 
+#tuckie{
+
+}
+
 #bot-half{
   -moz-box-shadow: inset 1px 8px 31px -20px #000000;
   -webkit-box-shadow: inset 1px 8px 31px -20px #000000;
@@ -206,4 +210,9 @@ animation: backgroundScroll 40s ease-in-out infinite;
   #pages img {
     zoom: 50%
   }
+
+  #tuckie{
+
+  }
+
 }
