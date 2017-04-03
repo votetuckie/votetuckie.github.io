@@ -10,14 +10,19 @@ body{
   margin: 0;
 }
 
+body h1{
+  color: #484757;
+}
+
+body p{
+  color: #484757;
+}
 h1{
   font-size: 24;
-  color: #484757;
 }
 
 p{
   font-size: 16;
-  color: #484757;
 }
 
 header{
