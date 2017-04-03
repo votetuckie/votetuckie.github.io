@@ -113,7 +113,8 @@ a.before:before, a.after:after {
 #pages li {
    display: inline-block;
    padding: 0;
-   margin: 0;
+   margin-left: 8px;
+   margin-right: 8px;
 }
 
 #pages li:hover, #pages li:visited, #pages li:active {
