@@ -1,0 +1,62 @@
+/* global/html defaultspace */
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background: url(../pics/checkers.png);
+  background-attachment:fixed;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+h1{
+  font-size: 24;
+}
+
+p{
+  font-size: 16;
+}
+
+header{
+  width: 100%;
+  padding: 0;
+}
+
+a, a:visited, a:hover, a:active {
+  -webkit-backface-visibility: hidden ;
+  position: relative ;
+  transition: 0.5s color ease !important;
+  text-decoration: none;
+}
+
+a{
+  color: pink;
+}
+
+a:hover {
+  color: #b39db7;
+}
+
+a.before:before, a.after:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+}
+
+.main{
+  background-color: #E5F2FC;
+  padding-top: 10px;
+  margin: 0;
+  padding-bottom: 20px;
+  -moz-box-shadow: inset 1px 11px 31px -20px #000000;
+  -webkit-box-shadow: inset 1px 11px 31px -20px #000000;
+  box-shadow: inset 1px 11px 31px -20px #000000;
+}
+
+#pagehead{
+  background-color: #baebae;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
