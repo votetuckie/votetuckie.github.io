@@ -170,6 +170,7 @@ a.before:before, a.after:after {
 
 #bot-half p{
   margin-left: 20px;
+  margin-right: 20px;
   padding-top:10px;
 }
 
