@@ -120,7 +120,6 @@ a.before:before, a.after:after {
    image-rendering: -moz-crisp-edges;
    image-rendering: -moz-crisp-edges;
    image-rendering: -o-crisp-edges;
-   image-rendering: -webkit-optimize-contrast;
    -ms-interpolation-mode: nearest-neighbor;
    display: inline-block;
    padding: 0;
@@ -176,7 +175,6 @@ a.before:before, a.after:after {
   image-rendering: -moz-crisp-edges;
   image-rendering: -moz-crisp-edges;
   image-rendering: -o-crisp-edges;
-  image-rendering: -webkit-optimize-contrast;
   -ms-interpolation-mode: nearest-neighbor;
   list-style: none;
   display: inline-block;
