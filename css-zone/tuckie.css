@@ -12,10 +12,12 @@ body{
 
 h1{
   font-size: 24;
+  color: #484757;
 }
 
 p{
   font-size: 16;
+  color: #484757;
 }
 
 header{
@@ -115,6 +117,11 @@ a.before:before, a.after:after {
 }
 
 #pages li {
+   image-rendering: -moz-crisp-edges;
+   image-rendering: -moz-crisp-edges;
+   image-rendering: -o-crisp-edges;
+   image-rendering: -webkit-optimize-contrast;
+   -ms-interpolation-mode: nearest-neighbor;
    display: inline-block;
    padding: 0;
    margin-left: 8px;
@@ -122,7 +129,7 @@ a.before:before, a.after:after {
 }
 
 #pages li:hover, #pages li:visited, #pages li:active {
-  translateY: 4px;
+  transform: translateY(4px);
 }
 
 #windows{
@@ -166,6 +173,11 @@ a.before:before, a.after:after {
 }
 
 #contact li{
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  -ms-interpolation-mode: nearest-neighbor;
   list-style: none;
   display: inline-block;
   width: auto;
