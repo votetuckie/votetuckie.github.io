@@ -128,21 +128,6 @@ a.before:before, a.after:after {
   margin-right: 2%;
 }
 
-#contact{
-  text-align: center;
-  height: auto;
-  list-style: none;
-  margin-right: 40px;
-}
-
-#contact li{
-  display: inline-block;
-  width: auto;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-}
-
 #socialz h1{
   margin-left: 20px;
 }
@@ -213,29 +198,11 @@ animation: backgroundScroll 40s ease-in-out infinite;
 @media(max-width: 768px){
 
   #windows li{
-    width: 80%;
+    width: 90%;
     padding-top: 20px;
   }
 
   #pages img {
     zoom: 50%
   }
-
-  #contact{
-    text-align: center;
-    height: auto;
-    list-style: none;
-    margin-right: 40px;
-  }
-
-  #socialz, #socialz h1{
-    margin-left: 0px;
-    text-align: center;
-  }
-
-  #contact li{
-    width: auto;
-    height: auto;
-  }
-
 }
