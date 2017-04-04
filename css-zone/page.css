@@ -64,11 +64,13 @@ a.before:before, a.after:after {
 }
 
 #navbar{
-  text-align: center;
+  list-style: none;
+  text-align: left;
 }
 
 #navbar li{
   display: inline-block;
+  text-align: center;
   background-color: #7ED6B2;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
@@ -79,5 +81,6 @@ a.before:before, a.after:after {
 }
 
 #current{
+  display: inline-block;
   background-color: white;
 }
