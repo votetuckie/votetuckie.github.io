@@ -48,7 +48,8 @@ a.before:before, a.after:after {
   background-color: #E5F2FC;
   padding-top: 10px;
   margin: 0;
-  padding-bottom: 110px;
+  padding-top: 150px;
+  padding-bottom: 20px;
   -moz-box-shadow: inset 1px 11px 31px -20px #000000;
   -webkit-box-shadow: inset 1px 11px 31px -20px #000000;
   box-shadow: inset 1px 11px 31px -20px #000000;
@@ -56,25 +57,20 @@ a.before:before, a.after:after {
 
 /* id space */
 #pagehead{
-
-  background-color: #baebae;
+  background-image: url(../pics/cloudbar.png);
+  height: 136px;
   font-size: 20px;
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 10px;
   position:fixed;
   top: 0;
   margin:auto;
   left: 0;
   right: 0;
   z-index: 1000;
-  -moz-box-shadow: 0 -20px 19px 20px #000000;
--webkit-box-shadow: 0 -20px 19px 20px #000000;
-box-shadow: 0 -20px 19px 20px #000000;
 }
 
 #navbar{
-  margin-top: auto;
+  margin-top: 14px;
   margin-bottom: 8px;
   margin-left: 0px;
   list-style: none;
@@ -85,7 +81,7 @@ box-shadow: 0 -20px 19px 20px #000000;
   display: inline-block;
   text-align: center;
   width: 80px;
-  background-image: url(../pics/cloudbar.png);
+  background-color: white;
   margin-right: 16px;
   -moz-box-shadow: 0 4px 18px -5px #423f3f;
   -webkit-box-shadow: 0 4px 18px -5px #423f3f;
