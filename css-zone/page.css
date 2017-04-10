@@ -91,6 +91,16 @@ a.before:before, a.after:after {
 
 }
 
+.footey{
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footey p{
+  font-size: 8px;
+}
+
 /* id space */
 #pagehead{
   background-image: url(../pics/cloudbar.png);
