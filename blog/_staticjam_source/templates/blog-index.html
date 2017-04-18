@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% set active = ["blog"] %}
+{% block title %}tuckie blog{% endblock %}
+{% block article_title %}blog{% endblock %}
+{% block article_header %}
+  <p>
+    Categories:
+    {% for category in categories %}
+    <a href="/blog/{{ category }}">{{ category }}</a>
+    {% endfor %}
+  </p>
+{% endblock %}
+{% block body %}
+  {% for post in posts %}
+    <article>
+      <header>
+        <h1><a href="/{{ post.href }}">{{ post.title }}</a></h1>
+        <dl>
+          <dt>Category</dt>
+          <dd><a href="/blog/{{ post.category }}">{{ post.category }}</a></dd>
+
+          <dt>Timestamp</dt>
+          <dd>{{ post.timestamp }}</dt>
+        </dl>
+      </header>
+      <p>{{ post.summary }}</p>
+    </article>
+  {% endfor %}
+{% endblock %}
