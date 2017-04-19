@@ -3,11 +3,15 @@
 {% block title %}{{ post.title }}{% endblock %}
 {% block article_title %}{{ post.title }}{% endblock %}
 {% block body %}
+<div id="top-half">
   <dl>
-    <dt>Category</dt>
+    <dt></dt>
     <dd><a href="/blog/{{ post.category }}">{{ post.category }}</a></dd>
-    <dt>Timestamp</dt>
+    <dt>@</dt>
     <dd>{{ post.timestamp }}</dd>
   </dl>
+</div>
+<div id="bot-half">
   {{ post.content }}
+</div>
 {% endblock %}
