@@ -12,10 +12,6 @@
 <body>
 
 <div class="container">
-    <header>
-      <h1 class="heading-asymmetrical"></h1>
-      <h2 class="subtitle"></h2>
-    </header>
 
     {% set navigation = [
       ('/blog', 'blog'),
@@ -30,7 +26,9 @@
       {% endfor %}
       </ul>
     </nav>
+</div>
 
+<div class="main">
     <article>
       <div id="tophalf">
         <h1 class="heading-asymmetrical">{% block article_title %}{% endblock %}</h1>
