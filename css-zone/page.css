@@ -35,11 +35,11 @@ a, a:visited, a:hover, a:active {
 }
 
 a{
-  color: pink;
+  color: #b39db7;
 }
 
 a:hover {
-  color: #b39db7;
+  color: #735DAF;
 }
 
 a.before:before, a.after:after {

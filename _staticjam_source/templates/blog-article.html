@@ -1,17 +1,19 @@
 {% extends "base.html" %}
 {% set active = ["blog"] %}
-{% block title %}{{ post.title }}{% endblock %}
-{% block article_title %}{{ post.title }}{% endblock %}
 {% block body %}
+<div class="zone">
 <div id="top-half">
+  {% block title %}{{ post.title }}{% endblock %}
+  {% block article_title %}{{ post.title }}{% endblock %}
   <dl>
     <dt></dt>
     <dd><a href="/blog/{{ post.category }}">{{ post.category }}</a></dd>
-    <dt>@</dt>
+    <dt>@ </dt>
     <dd>{{ post.timestamp }}</dd>
   </dl>
 </div>
 <div id="bot-half">
   {{ post.content }}
+</div>
 </div>
 {% endblock %}

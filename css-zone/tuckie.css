@@ -33,11 +33,11 @@ a, a:visited, a:hover, a:active {
 }
 
 a{
-  color: pink;
+  color: #b39db7;
 }
 
 a:hover {
-  color: #b39db7;
+  color: #735DAF;
 }
 
 a.before:before, a.after:after {
@@ -336,7 +336,7 @@ animation: backgroundScroll 40s ease-in-out infinite;
     padding-bottom: 10px;
   }
 
-  
+
   #contact li{
     list-style: none;
     display: inline-grid;
