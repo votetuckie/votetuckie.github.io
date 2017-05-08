@@ -64,6 +64,7 @@ a.before:before, a.after:after {
 .zone{
   background-color: white;
   margin-top: 20px;
+  margin-bottom: 20px;
   margin-left: 10%;
   height: auto;
   width: 80%;
