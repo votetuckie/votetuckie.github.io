@@ -93,6 +93,8 @@ a.before:before, a.after:after {
 .text-zone{
   display: inline-block;
   width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
   margin: 4px 4px 4px 4px;
 }
 
@@ -113,7 +115,7 @@ a.before:before, a.after:after {
   box-shadow: 0px 30px 18px 26px rgba(0,0,0,0.75);
 }
 
-.footey p, a{
+.footey p a{
   font-size: 12px;
 }
 
