@@ -93,11 +93,14 @@ a.before:before, a.after:after {
 .text-zone{
   display: inline-block;
   width: auto;
-  padding-left: 30px;
-  padding-right: 30px;
+
   margin: 4px 4px 4px 4px;
 }
 
+.text-zone p{
+  padding-left: 30px;
+  padding-right: 30px;
+}
 .image-left img{
 
 }
