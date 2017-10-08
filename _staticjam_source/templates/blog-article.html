@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 {% set active = ["blog"] %}
 {% block body %}
+{% block title %}{{ post.title }}{% endblock %}
 <div class="zone">
 <div id="top-half">
-  {% block title %}{{ post.title }}{% endblock %}
   {% block article_title %}{{ post.title }}{% endblock %}
   <dl>
     <dt></dt>

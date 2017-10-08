@@ -116,6 +116,12 @@ a.before:before, a.after:after {
     border-bottom-right-radius: 4px;
 }
 
+.zone #left{
+  float: left;
+}
+.zone #right{
+  float: right;
+}
 .youtube {
   display: block;
   margin-left: auto;
