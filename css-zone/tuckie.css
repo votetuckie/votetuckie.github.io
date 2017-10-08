@@ -181,15 +181,18 @@ a.before:before, a.after:after {
 #socialz h1{
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 #contact{
   height: auto;
   list-style: none;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 0px;
   padding-right: 40px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
 }
 
 #contact li{
@@ -200,6 +203,8 @@ a.before:before, a.after:after {
   list-style: none;
   display: inline-block;
   width: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -211,6 +216,7 @@ a.before:before, a.after:after {
   margin-top: 20px;
   margin-bottom: auto;
   text-align: left;
+  margin-left: 30%;
   -moz-box-shadow: 0 3px 15px -3px #000000;
   -webkit-box-shadow: 0 3px 15px -3px #000000;
   box-shadow: 0 3px 15px -3px #000000;
