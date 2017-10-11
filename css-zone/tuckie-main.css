@@ -8,6 +8,36 @@ body, html {
     cursor: url(cursor.png), pointer;
 }
 
+a, a:visited, a:hover, a:active {
+  -webkit-backface-visibility: hidden ;
+  position: relative ;
+  transition: 0.5s color ease !important;
+  text-decoration: none;
+}
+
+a{
+  color: #E0A3D4;
+}
+
+a:hover {
+  color: #A1D2FC;
+}
+
+a.before:before, a.after:after {
+  content: "";
+  transition: 0.5s all ease;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+}
+
+#element::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 .zone {
   width: 80%;
   margin-left: 10%;
@@ -24,4 +54,22 @@ body, html {
 
 #tuckicon img{
   max-width: 480px;
+  width: 100%;
+}
+
+#under-icon{
+  text-align: center;
+  list-style-type: none;
+}
+
+#under-icon li{
+  display: inline;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: #A1D2FC;
+}
+
+#under-icon a{
+  font-size: 4vw;
 }
