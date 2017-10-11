@@ -2,6 +2,8 @@ body{
   background: #442568;
   height: 100vh;
   margin: 0;
+  font: 4vh"Source Sans Pro Light";
+  -webkit-font-smoothing : none;
 }
 
 body, html {
@@ -16,11 +18,13 @@ a, a:visited, a:hover, a:active {
 }
 
 a{
-  color: #E0A3D4;
+  color: #EABEE2;
+  margin: 0;
 }
 
 a:hover {
   color: #A1D2FC;
+  cursor: url(cursor.png), pointer;
 }
 
 a.before:before, a.after:after {
@@ -60,6 +64,7 @@ a.before:before, a.after:after {
 #under-icon{
   text-align: center;
   list-style-type: none;
+  margin: 0;
 }
 
 #under-icon li{
