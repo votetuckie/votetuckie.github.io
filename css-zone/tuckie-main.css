@@ -3,6 +3,7 @@ body{
   height: 100vh;
   font: 3vh"Dosis";
   font-family: 'Dosis', sans-serif;
+  font-weight: 600;
   -webkit-font-smoothing : none;
 }
 
@@ -56,10 +57,10 @@ a.before:before, a.after:after {
   background-color: #8368BA;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 15%;
+  margin-left: 10%;
   padding: 0;
   padding-bottom: 6px;
-  width: 70%;
+  width: 80%;
   height: auto;
   text-align: center;
   border-top-left-radius: 8px;
@@ -106,13 +107,15 @@ a.before:before, a.after:after {
   display: inline;
   text-align: center;
   padding: 0;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
   color: #A1D2FC;
+  font-weight: bold;
   width: auto;
 }
 
 #under-icon a{
   font-size: 3vh;
+
   width: auto;
 }
