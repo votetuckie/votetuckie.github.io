@@ -1,13 +1,14 @@
 body{
   background: #442568;
   height: 100vh;
-  margin: 0;
-  font: 4vh"Century Gothic";
+  font: 3vh"Century Gothic";
   -webkit-font-smoothing : none;
 }
 
 body, html {
     cursor: url(cursor.png), pointer;
+    margin: 0;
+    padding: 0;
 }
 
 a, a:visited, a:hover, a:active {
@@ -42,12 +43,44 @@ a.before:before, a.after:after {
     display: none;
 }
 
-.zone {
+.area {
   width: 80%;
   margin-left: 10%;
   margin-top: 30px;
   padding: 0;
   text-align: center;
+}
+
+.zone{
+  background-color: #8368BA;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 15%;
+  padding: 0;
+  padding-bottom: 6px;
+  width: 70%;
+  height: auto;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.zone img #left{
+  display: inline-block;
+  float: left;
+}
+.zone img #right{
+  display: inline-block;
+  float: right;
+}
+
+.text-zone{
+  display: inline-block;
+  width: auto;
+  margin: 4px 4px 4px 4px;
+  height: x;
 }
 
 #tuckicon, {
@@ -65,16 +98,20 @@ a.before:before, a.after:after {
   text-align: center;
   list-style-type: none;
   margin: 0;
+  padding: 0;
 }
 
 #under-icon li{
   display: inline;
   text-align: center;
+  padding: 0;
   margin-left: 10px;
   margin-right: 10px;
   color: #A1D2FC;
+  width: auto;
 }
 
 #under-icon a{
   font-size: 3vh;
+  width: auto;
 }
