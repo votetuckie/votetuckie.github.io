@@ -119,3 +119,45 @@ a.before:before, a.after:after {
 
   width: auto;
 }
+
+#mc_embed_signup{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+#mc_embed_signup_scroll{
+  display: inline-block;
+  text-align: center;
+}
+input{
+  background: #B69FEA;
+  color: white;
+}
+
+input[type=email] {
+  font-family: 'Dosis', sans-serif;
+  padding:5px; border:0px solid #ccc;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  cursor: url(cursor.png);
+  color: white;
+  font-size: 14px;
+}
+input[type=email]:focus {
+  border-color: none;
+  color: white;
+  cursor: url(cursor.png), pointer;
+}
+
+input[type=submit] {
+  width: 160px;
+  text-align: center;
+  font-weight: 600;
+  font-family: 'Dosis', sans-serif;
+  padding:5px 15px;
+  border:0 none;
+  font-size: 16px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  cursor: url(cursor.png), pointer;
+}
