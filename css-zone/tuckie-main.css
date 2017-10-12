@@ -1,7 +1,8 @@
 body{
   background: #442568;
   height: 100vh;
-  font: 3vh"Century Gothic";
+  font: 3vh"Dosis";
+  font-family: 'Dosis', sans-serif;
   -webkit-font-smoothing : none;
 }
 

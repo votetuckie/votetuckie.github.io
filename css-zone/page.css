@@ -4,7 +4,7 @@ body{
   background: #442568;
   height: 100%;
   margin: 0;
-  font: 4vh"Century Gothic";
+  font: 4vh"Dosis";
   -webkit-font-smoothing : none;
 }
 
@@ -22,7 +22,7 @@ body, html {
 
 body{
   position: relative;
-  font-family: 'Century Gothic', sans-serif;
+  font-family: 'Dosis', sans-serif;
   background-color: #E5F2FC;
   width: auto;
   min-height: 100%;
@@ -33,7 +33,7 @@ body{
   background: #442568;
   height: 100vh;
   margin: 0;
-  font: 4vh"Century Gothic";
+  font: 4vh"Dosis";
   -webkit-font-smoothing : none;
 }
 iframe {
@@ -43,7 +43,7 @@ iframe {
   padding: 0;
 }
 h1{
-  font-family: 'Century Gothic';
+  font-family: 'Dosis';
   font-weight: bold;
   margin: auto;
   font-size: 18pt;
