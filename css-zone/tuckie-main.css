@@ -112,6 +112,7 @@ a.before:before, a.after:after {
   color: #A1D2FC;
   font-weight: bold;
   width: auto;
+  letter-spacing: 4px;
 }
 
 #under-icon a{
@@ -151,6 +152,7 @@ input[type=email]:focus {
 
 input[type=submit] {
   width: 160px;
+  margin-top: 8px;
   text-align: center;
   font-weight: 600;
   font-family: 'Dosis', sans-serif;
