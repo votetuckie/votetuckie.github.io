@@ -5,12 +5,26 @@ body{
   font-family: 'Dosis', sans-serif;
   font-weight: 600;
   -webkit-font-smoothing : none;
+  display: grid;
 }
 
 body, html {
     cursor: url(cursor.png), pointer;
     margin: 0;
     padding: 0;
+}
+
+iframe{
+  width: 60%;
+  max-width: 640px;
+  margin-left: 5%;
+  height: auto;
+  min-height: 360px;
+  margin-top: 16px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 a, a:visited, a:hover, a:active {
@@ -28,6 +42,12 @@ a{
 a:hover {
   color: #A1D2FC;
   cursor: url(cursor.png), pointer;
+}
+
+h1{
+  color: #EABEE2;
+  margin: auto;
+  text-align: center;
 }
 
 a.before:before, a.after:after {
@@ -69,6 +89,14 @@ a.before:before, a.after:after {
   border-bottom-right-radius: 8px;
 }
 
+#zone-center{
+  display: inline-flex;
+  justify-content: space-between;
+  width: auto;
+  max-width: 60%;
+  margin-left: 20%;
+}
+
 .zone img #left{
   display: inline-block;
   float: left;
@@ -79,10 +107,7 @@ a.before:before, a.after:after {
 }
 
 .text-zone{
-  display: inline-block;
   width: auto;
-  margin: 4px 4px 4px 4px;
-  height: x;
 }
 
 #tuckicon, {
@@ -136,17 +161,20 @@ input{
 }
 
 input[type=email] {
+  width: 152px;
   font-family: 'Dosis', sans-serif;
-  padding:5px; border:0px solid #ccc;
+  border:0px solid #ccc;
+  padding: 4px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
   cursor: url(cursor.png);
   color: white;
-  font-size: 14px;
+  font-size: 16px;
 }
 input[type=email]:focus {
   border-color: none;
   color: white;
+  padding: 4px;
   cursor: url(cursor.png), pointer;
 }
 
@@ -156,8 +184,7 @@ input[type=submit] {
   text-align: center;
   font-weight: 600;
   font-family: 'Dosis', sans-serif;
-  padding:5px 15px;
-  border:0 none;
+  border: 0;
   font-size: 16px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
