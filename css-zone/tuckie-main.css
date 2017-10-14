@@ -84,7 +84,7 @@ a.before:before, a.after:after {
   margin-bottom: 20px;
   margin-left: 10%;
   padding: 0;
-  padding-bottom: 20px;
+  padding-bottom: 6px;
   width: 80%;
   height: auto;
   text-align: center;
@@ -137,6 +137,7 @@ a.before:before, a.after:after {
   display: inline;
   text-align: center;
   padding: 0;
+  padding-top: 20px;
   margin-left: 5px;
   margin-right: 5px;
   color: #A1D2FC;
@@ -146,7 +147,7 @@ a.before:before, a.after:after {
 }
 
 #under-icon a{
-  font-size: 3vh;
+  font-size: 4vh;
 
   width: auto;
 }
@@ -173,31 +174,54 @@ input{
 }
 
 input[type=email] {
-  width: 152px;
+  width: 90%;
   font-family: 'Dosis', sans-serif;
   border:0px solid #ccc;
   padding: 4px;
+  padding-top: 0;
+  margin-top: 16px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
   cursor: url(cursor.png);
   color: white;
-  font-size: 16px;
+  font-size: 2.5vh;
 }
 input[type=email]:focus {
   border-color: none;
   color: white;
   padding: 4px;
+  padding-top: 0;
+  text-align: center;
+  font-size: 2.5vh;
   cursor: url(cursor.png), pointer;
 }
 
+*::-webkit-input-placeholder {
+    color: white;
+    text-align: center;
+}
+*:-moz-placeholder {
+    color: white;
+    text-align: center;
+}
+*::-moz-placeholder {
+    color: white;
+    text-align: center;
+}
+*:-ms-input-placeholder {
+    color: white;
+    text-align: center;
+}
+
 input[type=submit] {
-  width: 160px;
+  width: 80%;
+  background: #43A4AD;
   margin-top: 8px;
   text-align: center;
   font-weight: 600;
   font-family: 'Dosis', sans-serif;
   border: 0;
-  font-size: 16px;
+  font-size: 3vh;
   -webkit-border-radius: 8px;
   border-radius: 8px;
   cursor: url(cursor.png), pointer;

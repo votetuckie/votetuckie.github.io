@@ -773,7 +773,7 @@ floating
 ==============================================
 */
 
-.floating{
+#floating{
 	animation-name: floating;
 	-webkit-animation-name: floating;
 
