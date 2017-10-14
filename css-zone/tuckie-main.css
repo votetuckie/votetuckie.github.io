@@ -286,4 +286,13 @@ input[type=submit]:hover {
     font-size: 36px;
   }
 
+  #gallery img{
+      max-width: 100%;
+      height: auto;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+  }
+
 }
