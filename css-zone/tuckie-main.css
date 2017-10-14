@@ -164,6 +164,7 @@ a.before:before, a.after:after {
 
 #gallery img{
     max-width: 320px;
+    height: auto;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
