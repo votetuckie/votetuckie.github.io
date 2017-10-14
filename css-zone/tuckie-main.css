@@ -156,11 +156,26 @@ a.before:before, a.after:after {
   width: auto;
 }
 
+#gallery{
+  display: subgrid;
+  margin: 20px;
+  max-height: auto;
+}
+
+#gallery img{
+    zoom: 50%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 #mailing{
   width: 30%;
   max-height: 200px;
   margin: 5%;
   display: center;
+  justify-content: space-around;
 }
 
 #mc_embed_signup{
