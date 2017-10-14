@@ -259,6 +259,7 @@ input[type=submit]:hover {
 
   iframe{
     min-width: 90%;
+    height: 180px;
     display: center;
     height: auto;
     margin-top: 16px;
@@ -268,7 +269,6 @@ input[type=submit]:hover {
   #zone-center{
     display: grid;
     justify-content: center;
-    width: auto;
     max-width: 90%;
   }
 
@@ -284,6 +284,7 @@ input[type=submit]:hover {
   }
   h1{
     font-size: 36px;
+    margin: 5%;
   }
 
   #gallery img{
