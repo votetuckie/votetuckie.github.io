@@ -50,6 +50,11 @@ h1{
   text-align: center;
 }
 
+p{
+  color: #E4D8FF;
+  margin: 2px;
+}
+
 a.before:before, a.after:after {
   content: "";
   transition: 0.5s all ease;
@@ -79,7 +84,7 @@ a.before:before, a.after:after {
   margin-bottom: 20px;
   margin-left: 10%;
   padding: 0;
-  padding-bottom: 6px;
+  padding-bottom: 20px;
   width: 80%;
   height: auto;
   text-align: center;
@@ -146,6 +151,13 @@ a.before:before, a.after:after {
   width: auto;
 }
 
+#mailing{
+  width: 30%;
+  max-height: 200px;
+  margin: 5%;
+  display: center;
+}
+
 #mc_embed_signup{
   display: inline-block;
   text-align: center;
@@ -189,4 +201,35 @@ input[type=submit] {
   -webkit-border-radius: 8px;
   border-radius: 8px;
   cursor: url(cursor.png), pointer;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+
+  iframe{
+    min-width: 90%;
+    display: center;
+    height: auto;
+    margin-top: 16px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  #zone-center{
+    display: grid;
+    justify-content: center;
+    width: auto;
+    max-width: 80%;
+    margin-left: 10%;
+  }
+
+  #mailing{
+    width: 90%;
+    max-height: 200px;
+    margin-left: 5%;
+    display: center;
+  }
+
 }
