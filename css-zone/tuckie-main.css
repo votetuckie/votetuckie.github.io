@@ -16,7 +16,8 @@ body, html {
 
 iframe{
   width: 60%;
-  max-width: 640px;
+  min-width: 30vw;
+  max-width: 59%;
   margin-left: 5%;
   height: auto;
   min-height: 360px;
@@ -82,10 +83,11 @@ a.before:before, a.after:after {
   background-color: #8368BA;
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-left: 10%;
   padding: 0;
   padding-bottom: 6px;
   width: 80%;
+  max-width: 1080px;
+  justify-self: center;
   height: auto;
   text-align: center;
   border-top-left-radius: 8px;
@@ -98,8 +100,7 @@ a.before:before, a.after:after {
   display: inline-flex;
   justify-content: space-between;
   width: auto;
-  max-width: 60%;
-  margin-left: 20%;
+  padding: 10px;
 }
 
 .zone img #left{
@@ -119,11 +120,14 @@ a.before:before, a.after:after {
   width: 40%;
   margin-left: 30%;
   text-align: center;
+  margin-bottom: 40px;
+  height: auto;
 }
 
 #tuckicon img{
   max-width: 480px;
   width: 100%;
+  height: auto;
 }
 
 #under-icon{
@@ -147,7 +151,7 @@ a.before:before, a.after:after {
 }
 
 #under-icon a{
-  font-size: 4vh;
+  font-size: 3.5vh;
 
   width: auto;
 }
@@ -214,18 +218,25 @@ input[type=email]:focus {
 }
 
 input[type=submit] {
-  width: 80%;
+  width: auto;
+  justify-content: center;
   background: #43A4AD;
   margin-top: 8px;
   text-align: center;
   font-weight: 600;
   font-family: 'Dosis', sans-serif;
   border: 0;
+  padding: 4px;
   font-size: 3vh;
   -webkit-border-radius: 8px;
   border-radius: 8px;
   cursor: url(cursor.png), pointer;
   margin-bottom: 10px;
+}
+
+input[type=submit]:hover {
+  background: #B69FEA;
+  cursor: url(cursor.png), pointer;
 }
 
 @media only screen and (max-width: 768px) {
@@ -235,18 +246,14 @@ input[type=submit] {
     display: center;
     height: auto;
     margin-top: 16px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+
   }
 
   #zone-center{
     display: grid;
     justify-content: center;
     width: auto;
-    max-width: 80%;
-    margin-left: 10%;
+    max-width: 90%;
   }
 
   #mailing{
@@ -254,6 +261,13 @@ input[type=submit] {
     max-height: 200px;
     margin-left: 5%;
     display: center;
+  }
+  #under-icon a{
+    font-size: 24px;
+    width: auto;
+  }
+  h1{
+    font-size: 36px;
   }
 
 }
