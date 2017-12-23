@@ -22,12 +22,15 @@ body, html {
     padding: 0;
 }
 
+
 iframe{
-  width: 50%;
-  margin-left: 5%;
-  height: auto;
-  min-height: 360px;
-  margin-top: 16px;
+  width: 45vw;
+  height: 25.3125vw;
+  max-width: 640px;
+  max-height: 360px;
+  float: left;
+  margin: 16px;
+  margin-top: 32px;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom-left-radius: 8px;
@@ -185,7 +188,7 @@ a.before:before, a.after:after {
 
 #mailing{
   max-height: 200px;
-  min-width: 30%;
+  width: 20vw;
   margin: 5%;
   display: center;
   justify-content: space-around;
@@ -283,11 +286,12 @@ input[type=submit]:hover {
 @media only screen and (max-width: 768px) {
 
   iframe{
+    float: none;
     min-width: 70vw;
-    height: 180px;
-    display: center;
-    height: auto;
+    height: 39.375vw;
+    text-align: center;
     margin-left: auto;
+    margin-right: auto;
     margin-top: 16px;
 
   }
