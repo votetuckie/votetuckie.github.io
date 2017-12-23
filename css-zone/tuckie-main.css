@@ -1,11 +1,19 @@
 body{
   background: #442568;
+  background: url(tiles.png);
   height: 100vh;
   font: 3vh"Dosis";
   font-family: 'Dosis', sans-serif;
   font-weight: 600;
   -webkit-font-smoothing : none;
   display: grid;
+  text-shadow: 3px 3px 0px rgba(0, 0, 45, 0.35);
+  animation: scrollz 5s infinite cubic-bezier(0.500, 0.250, 0.500, 0.750);
+}
+
+@keyframes scrollz {
+        0%{background-position: 0% 0%;}
+        100%{background-position: -640px 640px;}
 }
 
 body, html {
