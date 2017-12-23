@@ -9,7 +9,7 @@ body{
   display: grid;
   text-shadow: 3px 3px 0px rgba(0, 0, 45, 0.35);
   animation: scrollz 5s infinite cubic-bezier(0.500, 0.250, 0.500, 0.750);
-} 
+}
 
 @keyframes scrollz {
         0%{background-position: 0% 0%;}
@@ -163,14 +163,20 @@ a.before:before, a.after:after {
 }
 
 #gallery{
-  display: subgrid;
-  margin: 20px;
-  max-height: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+#gallery p{
+  display: inline-block;
+  margin: 0 8px;
 }
 
 #gallery img{
     max-width: 320px;
     height: auto;
+    margin: 0px;
+    margin-top: 5px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
