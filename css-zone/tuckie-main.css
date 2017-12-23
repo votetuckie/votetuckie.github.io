@@ -269,13 +269,25 @@ input[type=submit]:hover {
   cursor: url(cursor.png), pointer;
 }
 
+@media only screen and (max-width: 880px) {
+  #gallery img{
+      max-width: 100%;
+      height: auto;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
 
   iframe{
-    min-width: 90%;
+    min-width: 70vw;
     height: 180px;
     display: center;
     height: auto;
+    margin-left: auto;
     margin-top: 16px;
 
   }
