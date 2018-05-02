@@ -110,4 +110,9 @@ h2 {
     width: 85%;
   }
 
+  #gallery img{
+    max-width: 95%;
+    padding-right: 10px;
+  }
+
 }
