@@ -99,6 +99,7 @@ a:hover {
 .textblock img {
   max-width: 50%;
   width: auto;
+  float: right;
 }
 
 .gallery {
@@ -189,6 +190,13 @@ a:hover {
 
   .textblock {
     width: auto;
+  }
+
+  .textblock img {
+    width: 100%;
+    float: none;
+    max-width: 80%;
+    margin: 40px 10%;
   }
 
 }
