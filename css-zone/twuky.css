@@ -96,6 +96,11 @@ a:hover {
   box-shadow: 4px 4px 1px 0px rgba(50, 50, 50, 0.28);
 }
 
+.textblock img {
+  max-width: 50%;
+  width: auto;
+}
+
 .gallery {
   background: #FFFFFF;
   border: 10px solid #5C5B8C;
