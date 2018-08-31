@@ -36,12 +36,71 @@
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
     <style> body {padding: 0; margin: 0;} </style>
+
+    <script type="text/javascript">
+
+      function show_pixel_art() {
+        $("#illus").hide();
+        $("#vector").hide();
+        $("#pixel").show();
+      }
+
+      function show_illustration() {
+        $("#illus").show();
+        $("#vector").hide();
+        $("#pixel").hide();
+      }
+
+      function show_vector() {
+        $("#illus").hide();
+        $("#vector").show();
+        $("#pixel").hide();
+      }
+      $(function(){
+        show_pixel_art();
+      });
+    </script>
+
   </head>
 
   <!--body start-->
   <body id="page">
     <div class="contentzone">
-      hi
+      <div class="navblock">
+        <a onclick="show_pixel_art()" href="javascript:void(0);"> pixels </a> ///
+        <a onclick="show_illustration()" href="javascript:void(0);"> illustration </a> ///
+        <a onclick="show_vector()" href="javascript:void(0);"> vector </a> ///
+        <a href="http://tuckie.zone"> back </a>
+      </div>
+
+      <div class="gallery" id="pixel">
+        <img src="pixel/shadowpunk.png" onclick="window.open(this.src)"/>
+        <img src="pixel/groggymoss.png" onclick="window.open(this.src)"/>
+        <img src="pixel/loveyjelly.png" onclick="window.open(this.src)"/>
+        <img src="pixel/chipmonk.png" onclick="window.open(this.src)"/>
+        <img src="pixel/lizardknife.gif" onclick="window.open(this.src)"/>
+        <img src="pixel/djclips.png" onclick="window.open(this.src)"/>
+        <img src="pixel/tree1.png" onclick="window.open(this.src)"/>
+        <img src="pixel/tree2.png" onclick="window.open(this.src)"/>
+        <img src="pixel/forest1.png" onclick="window.open(this.src)"/>
+        <img src="pixel/forest2.png" onclick="window.open(this.src)"/>
+        <img src="pixel/cave.png" onclick="window.open(this.src)"/>
+        <img src="pixel/beachtiles.png" onclick="window.open(this.src)"/>
+      </div>
+
+      <div class="gallery" id="illus">
+        <img src="illus/aaa.png" onclick="window.open(this.src)"/>
+        <img src="illus/space.png" onclick="window.open(this.src)"/>
+        <img src="illus/background.png" onclick="window.open(this.src)"/>
+        <img src="illus/slimetuck.png" onclick="window.open(this.src)"/>
+        <img src="illus/frogmage.png" onclick="window.open(this.src)"/>
+        <img src="illus/jeff.png" onclick="window.open(this.src)"/>
+        <img src="illus/druidsketch.png" onclick="window.open(this.src)"/>
+        <img src="illus/comic2.png" onclick="window.open(this.src)"/>
+      </div>
+
+      <div class="gallery" id="vector"> </div>
+
     </div>
   </body>
 

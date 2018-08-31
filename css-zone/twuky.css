@@ -82,6 +82,7 @@ a:hover {
   margin: auto;
   padding-top: 40px;
   max-width: 1200px;
+  width: auto;
 }
 
 .textblock {
@@ -93,6 +94,23 @@ a:hover {
   box-shadow: 4px 4px 1px 0px rgba(50, 50, 50, 0.28);
 }
 
+.gallery {
+  background: #FFFFFF;
+  border: 10px solid #5C5B8C;
+  padding: 20px;
+  border-radius: 30px;
+  width: 80%;
+  margin: auto;
+  box-shadow: 4px 4px 1px 0px rgba(50, 50, 50, 0.28);
+  padding: 10px;
+  text-align: center;
+}
+
+.gallery img {
+  margin: auto;
+  max-width: 30%;
+}
+
 .main {
   float: right;
 }
@@ -101,10 +119,11 @@ a:hover {
   background: #D4E8F7;
   font-size: 28px;
   padding: 10px;
-  margin: 20px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 80px;
+  margin-bottom: 20px;
   padding-left: 20px;
-  width: auto;
   border-radius: 30px;
   box-shadow: 4px 4px 1px 0px rgba(50, 50, 50, 0.28);
 }
@@ -121,8 +140,47 @@ a:hover {
 
 #float{
   animation: floating 4s infinite;
+  float: left;
+  width: 400px;
+  height: auto;
 }
 
 #linkz img:hover{
   transform: translateY(4px);
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .contentzone {
+    width: 100%;
+  }
+
+  body {
+    font-size: 43px;
+  }
+
+  .main {
+    float: none;
+    width: 80%;
+    margin: auto;
+  }
+
+  #float {
+    float: none;
+    width: 50%;
+    margin: auto;
+    margin-left: 25%;
+  }
+
+  .navblock {
+    float: none;
+    width: auto;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .textblock {
+    width: auto;
+  }
+
 }
