@@ -32,7 +32,7 @@ function send_message() {
 
     var params = "?" + "room=" + room + "&message=" + msg + "&from_net=1";
     $.ajax({
-      url: "https://cryptidzones.gearhostpreview.com/send_msg.php" + params
+      url: "http://cryptidzones.gearhostpreview.com/send_msg.php" + params
       }).done(function(data){});
 
 }
@@ -54,27 +54,33 @@ function show_room() {
 }
 
 var dat;
+var count = 0;
 
 function pull_text() {
   var params = "?" + "room=" + room;
 
-  var url = "https://cryptidzones.gearhostpreview.com/phone_pull.php" + params;
+  var url = "http://cryptidzones.gearhostpreview.com/phone_pull.php" + params;
   var msgs = document.getElementById('messages');
   $.get(url, function(data, status){
     dat = data;
   });
+  if(dat.length <= count) {
+    return;
+  }
+  count = dat.length;
   msgs.innerHTML = "";
 
   dat.forEach(
     function(item) {
       if(item.from_net == 1) {
-        msgs.innerHTML += '<div class="msg_container">' + '<div class="msg">' + item.message + '</div>' + '</div>';
+        msgs.innerHTML += '<div class="msg_container">' + '<div class="msg">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
       } else {
-        msgs.innerHTML += '<div class="msg_container">' + '<div class="msg_other">' + item.message + '</div>' + '</div>';
+        msgs.innerHTML += '<div class="msg_container">' + '<div class="msg_other">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
       }
 
     }
 
   );
     updateScroll();
+    redraw_text();
   }

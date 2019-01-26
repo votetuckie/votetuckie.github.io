@@ -8,7 +8,8 @@ $(function(){
 })
 
 function redraw_text() {
-  chs = $(".wavy").blast({ delimiter: "character" });
+  chs = [];
+  chs = $(".wavy").blast({ delimiter: "word" });
   chs.each(function(i, element) {
     $(element).css("display", "inline-block");
     $(element).css("position", "relative");
@@ -25,33 +26,12 @@ function redraw_text() {
   });
 }
 
-
-
 window.setInterval(function(){
   chs.each(function(i, element) {
-    var pos = Math.sin(Date.now() * 0.01 + i) * 5;
+    var pos = Math.sin(Date.now() * 0.005 + i) * 5;
     var mos = Math.cos(Date.now() * 0.01 + i) * 3;
     $(element).css("top", pos.toString() + "px");
-    $(element).css("left", mos.toString() + "px");
-  });
-}, 20);
-
-window.setInterval(function(){
-  chs2.each(function(i, element) {
-    var pos = Math.sin(Math.random(0,10)) * 3;
-    var mos = Math.cos(Math.random(0,10)) * 3;
-    $(element).css("top", pos.toString() + "px");
-    $(element).css("left", mos.toString() + "px");
-  });
-}, 60);
-
-window.setInterval(function(){
-  chs3.each(function(i, element) {
-    var pos = Math.cos(Date.now() * 0.008 + i * 0.5) * 6;
-    var mos = Math.sin(Date.now() * 0.004 + i * 0.5) * 5 + Math.cos(Date.now() * 0.006 + i * 3) * 1;
-    $(element).css("top", pos.toString() + "px");
-    $(element).css("left", mos.toString() + "px");
-    $(element).css("color", rainbow(i));
+    //$(element).css("left", mos.toString() + "px");
   });
 }, 20);
 
