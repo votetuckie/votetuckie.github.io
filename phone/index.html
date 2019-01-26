@@ -34,13 +34,17 @@
 
   <div id="main">
     <div id="topbar">
-
+      <textarea name="room_code" rows="1" cols="40"></textarea>
+      <button name="send" type="submit"> <div id="sendtext" class="wavy"> send </div> </button>
     </div>
+
     <div id="messages">
 
+    </div>
+
     <div id="bottombar">
-      <textarea name="write_text" rows="8" cols="1"></textarea>
-      <button name="send" type="submit"> <div id="sendtext" class="wavy"> send </div> </button>
+      <textarea id="write_text" name="write_text" rows="1" cols="80"></textarea>
+      <button name="send" type="submit" onclick="send_message("write_text");"> <div id="sendtext" class="wavy"> send </div> </button>
 
     </div>
   </div>

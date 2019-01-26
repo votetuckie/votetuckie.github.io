@@ -25,15 +25,7 @@ function redraw_text() {
   });
 }
 
-function pull_text() {
-  $.get(
-    "http://cryptidzones.gearhostpreview.com/download.php",
-    {paramOne : 1, paramX : 'abc'},
-    function(data) {
-       alert('page content: ' + data);
-    }
-);
-}
+
 
 window.setInterval(function(){
   chs.each(function(i, element) {
