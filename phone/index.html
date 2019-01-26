@@ -23,9 +23,10 @@
 
     <script src="jquery.min.js"></script>
     <script src="jquery.blast.min.js"></script>
-    <script src="wavy.js"></script>
+
+    <script src="phone.js"></script>
     <link rel="stylesheet" href="./phone.css">
-    <script> pull_text() </script>
+    <script> </script>
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 
@@ -34,8 +35,9 @@
 
   <div id="main">
     <div id="topbar">
-      <textarea name="room_code" rows="1" cols="40"></textarea>
-      <button name="send" type="submit"> <div id="sendtext" class="wavy"> send </div> </button>
+      <div id="room"> </div>
+      <input type="text" id="room_code" rows="1" cols="40"></input>
+      <button name="send" onclick="setroom()"> join room </button>
     </div>
 
     <div id="messages">
@@ -43,8 +45,8 @@
     </div>
 
     <div id="bottombar">
-      <textarea id="write_text" name="write_text" rows="1" cols="80"></textarea>
-      <button name="send" type="submit" onclick="send_message("write_text");"> <div id="sendtext" class="wavy"> send </div> </button>
+      <input type="text" id="write_text" rows="1" cols="80"> </input>
+      <button name="send" onclick="send_message()" > send msg </button>
 
     </div>
   </div>

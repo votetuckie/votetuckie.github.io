@@ -1,37 +1,77 @@
 var room;
+room = 0;
 
-function setroom(id) {
-    var txtbox = document.getElementById(id);
-    room = int(txtbox.value);
+var scrolled = false;
+function updateScroll(){
+    if(!scrolled){
+        var element = document.getElementById("messages");
+        element.scrollTop = element.scrollHeight;
+    }
 }
 
-function send_message(id) {
-    var txtbox = document.getElementById(id);
-    var msg = int(txtbox.value);
+$("#messages").on('scroll', function(){
+    scrolled=true;
+});
 
-    var params = "?" + "room=" + "1" + "&message=" + msg + "&from_net=1";
+function setroom() {
+    var txtbox = document.getElementById('room_code');
+    rm = Number(txtbox.value);
+    if ( rm <= 0) {
+      alert("enter a number above 0!! Use the code from your game nerd");
+      return;
+    }
+    room = rm;
+}
 
-    $.get(
-      "http://cryptidzones.gearhostpreview.com/send_msg.php" + params,
-      {},
-      function(data) {
-      }
-    );
+function send_message() {
+    var txtbox = document.getElementById("write_text");
+    var msg = txtbox.value;
+
+    var params = "?" + "room=" + room + "&message=" + msg + "&from_net=1";
+    $.ajax({
+      url: "http://cryptidzones.gearhostpreview.com/send_msg.php" + params
+      }).done(function(data){});
 
 }
 
 window.setInterval(function(){
-  pull_text();
+  show_room();
+  if(room != 0) {
+    pull_text();
+  }
 }, 600);
 
-function pull_text() {
-
-
-  $.get(
-    "http://cryptidzones.gearhostpreview.com/phone_pull.php",
-    {room : 1,},
-    function(data) {
-       alert('page content: ' + data);
-    }
-  );
+function show_room() {
+  var txtbox = document.getElementById('room');
+  if (room == 0) {
+    txtbox.innerHTML = "not connected. enter room code";
+    return;
+  }
+  txtbox.innerHTML = "current room: " + room;
 }
+
+var dat;
+
+function pull_text() {
+  var params = "?" + "room=" + room;
+
+  var url = "http://cryptidzones.gearhostpreview.com/phone_pull.php" + params;
+  var msgs = document.getElementById('messages');
+  $.get(url, function(data, status){
+    dat = data;
+  });
+  msgs.innerHTML = "";
+
+  dat.forEach(
+    function(item) {
+      if(item.from_net == 1) {
+        msgs.innerHTML += '<div class="msg_container">' + '<div class="msg">' + item.message + '</div>' + '</div>';
+      } else {
+        msgs.innerHTML += '<div class="msg_container">' + '<div class="msg_other">' + item.message + '</div>' + '</div>';
+      }
+
+    }
+
+  );
+    updateScroll();
+  }
