@@ -32,7 +32,7 @@ function send_message() {
 
     var params = "?" + "room=" + room + "&message=" + msg + "&from_net=1";
     $.ajax({
-      url: "http://cryptidzones.gearhostpreview.com/send_msg.php" + params
+      url: "https://cryptidzones.gearhostpreview.com/send_msg.php" + params
       }).done(function(data){});
 
 }
@@ -58,7 +58,7 @@ var dat;
 function pull_text() {
   var params = "?" + "room=" + room;
 
-  var url = "http://cryptidzones.gearhostpreview.com/phone_pull.php" + params;
+  var url = "https://cryptidzones.gearhostpreview.com/phone_pull.php" + params;
   var msgs = document.getElementById('messages');
   $.get(url, function(data, status){
     dat = data;
