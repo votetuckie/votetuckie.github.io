@@ -4,13 +4,7 @@ var chs3;
 
 $(function(){
     // document.getElementById("quote").textContent= quotes[Math.floor(Math.random()*quotes.length)];
-    $.get(
-      "cryptidzones.gearhostpreview.com/download.php",
-      {paramOne : 1, paramX : 'abc'},
-      function(data) {
-         alert('page content: ' + data);
-      }
-  );
+
 })
 
 function redraw_text() {
@@ -32,7 +26,13 @@ function redraw_text() {
 }
 
 function pull_text() {
-
+  $.get(
+    "http://cryptidzones.gearhostpreview.com/download.php",
+    {paramOne : 1, paramX : 'abc'},
+    function(data) {
+       alert('page content: ' + data);
+    }
+);
 }
 
 window.setInterval(function(){
