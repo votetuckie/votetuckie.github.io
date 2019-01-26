@@ -24,6 +24,9 @@ function setroom() {
 }
 
 function send_message() {
+  if (room == 0) {
+    return;
+  }
     var txtbox = document.getElementById("write_text");
     var msg = txtbox.value;
 

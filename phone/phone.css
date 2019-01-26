@@ -14,9 +14,8 @@ html  {
   -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
   box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+
+  border-radius: 10px 10px 0px 10px;
 }
 
 .msg_other {
@@ -29,9 +28,9 @@ html  {
   -webkit-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
   -moz-box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
   box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.2);
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius:  10px 10px 10px 0px;
+  -moz-border-radius:  10px 10px 10px 0px;
+  border-radius: 10px 10px 10px 0px;
 }
 
 .msg text {
@@ -50,6 +49,7 @@ box-shadow: 0px 0px 28px 3px rgba(0,0,0,0.27);
 }
 
 #messages {
+  font-size: 25px;
   position: fixed;
   width: 100%;
   overflow-y: scroll;
@@ -75,6 +75,7 @@ box-shadow: 0px 0px 28px 3px rgba(0,0,0,0.27);
 
 input {
   style: none;
+  font-size: 20px;
   background-color: #daeaf5;
   border: none;
   outline:none;
