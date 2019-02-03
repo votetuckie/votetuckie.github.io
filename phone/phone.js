@@ -76,8 +76,22 @@ function pull_text() {
     dat.forEach(
       function(item) {
         if(item.from_net == 1) {
-          msgs.innerHTML += '<div class="msg_container">' + '<div class="msg">' + '<div class="wavy">' + '</div>' + '</div>' + '</div>';
-          msgs.innerText = item.message;
+          var div = document.createElement('div');
+          div.className = "msg_container";
+
+          var msgg = document.createElement('div');
+          msgg.className = "msg";
+
+          var wavy = document.createElement('div');
+          wavy.className = "wavy";
+
+          wavy.innerText = item.message;
+
+          msgg.appendChild(wavy);
+          div.appendChild(msgg);
+
+          msgs.appendChild(div);
+
         } else {
           msgs.innerHTML += '<div class="msg_container">' + '<div class="msg_other">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
         }
