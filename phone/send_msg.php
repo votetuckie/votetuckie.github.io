@@ -9,7 +9,10 @@ $password = "Wy54qWs5~39~";
 
 
 try {
-
+    $from_net = 1;
+    if(isset($_GET['from_net'])) {
+      $from_net = $_GET['from_net'];
+    }
     $conn = new PDO("mysql:host=$servername;dbname=cryptidvacation", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -31,7 +34,7 @@ try {
     $data = [
       ':room' => $_GET['room'],
       ':message' => $_GET['message'],
-      ':from_net' => $_GET['from_net'],
+      ':from_net' => $from_net,
     ];
     $query->execute($data);
     }

@@ -30,7 +30,7 @@ function send_message() {
     var txtbox = document.getElementById("write_text");
     var msg = txtbox.value;
 
-    var params = "?" + "room=" + room + "&message=" + msg + "&from_net=1";
+    var params = "?" + "room=" + room + "&message=" + msg;
     $.ajax({
       url: "https://cryptidzones.gearhostpreview.com/send_msg.php" + params
       }).done(function(data){});
