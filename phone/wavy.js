@@ -27,6 +27,7 @@ function redraw_text() {
 }
 
 window.setInterval(function(){
+  if (typeof chs == 'undefined') { return;}
   chs.each(function(i, element) {
     var pos = Math.sin(Date.now() * 0.005 + i) * 5;
     var mos = Math.cos(Date.now() * 0.01 + i) * 3;
