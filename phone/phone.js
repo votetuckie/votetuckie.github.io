@@ -47,10 +47,10 @@ window.setInterval(function(){
 function show_room() {
   var txtbox = document.getElementById('room');
   if (room == 0) {
-    txtbox.innerHTML = "not connected. enter room code";
+    txtbox.innerText = "not connected. enter room code";
     return;
   }
-  txtbox.innerHTML = "current room: " + room;
+  txtbox.innerText = "current room: " + room;
 }
 
 var dat;
@@ -64,21 +64,24 @@ function pull_text() {
   $.get(url, function(data, status){
     dat = data;
   });
-  if(dat.length <= count) {
-    return;
-  }
-  count = dat.length;
-  msgs.innerHTML = "";
-
-  dat.forEach(
-    function(item) {
-      if(item.from_net == 1) {
-        msgs.innerText += '<div class="msg_container">' + '<div class="msg">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
-      } else {
-        msgs.innerHTML += '<div class="msg_container">' + '<div class="msg_other">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
-      }
-
+  if (typeof dat !== 'undefined') {
+    if(dat.length <= count) {
+      return;
     }
+    count = dat.length;
+    msgs.innerHTML = "";
+
+    dat.forEach(
+      function(item) {
+        if(item.from_net == 1) {
+          msgs.innerText += '<div class="msg_container">' + '<div class="msg">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
+        } else {
+          msgs.innerHTML += '<div class="msg_container">' + '<div class="msg_other">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
+        }
+
+      }
+  }
+
 
   );
     updateScroll();
