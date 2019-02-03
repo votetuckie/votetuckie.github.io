@@ -1,5 +1,6 @@
 <?php
 header('Content-type: application/json');
+header("Access-Control-Allow-Origin: *");
 
 $servername = "den1.mysql6.gear.host";
 $username = "cryptidvacation";

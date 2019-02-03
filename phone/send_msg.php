@@ -1,4 +1,6 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+
 $servername = "den1.mysql6.gear.host";
 $username = "cryptidvacation";
 $password = "Wy54qWs5~39~";
