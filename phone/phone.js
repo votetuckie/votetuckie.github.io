@@ -76,13 +76,14 @@ function pull_text() {
     dat.forEach(
       function(item) {
         if(item.from_net == 1) {
-          msgs.innerText += '<div class="msg_container">' + '<div class="msg">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
+          msgs.innerHTML += '<div class="msg_container">' + '<div class="msg">' + '<div class="wavy">' + '</div>' + '</div>' + '</div>';
+          msgs.innerText = item.message;
         } else {
           msgs.innerHTML += '<div class="msg_container">' + '<div class="msg_other">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
         }
       }
     );
-    
+
   }
   updateScroll();
   redraw_text();
