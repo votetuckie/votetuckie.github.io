@@ -32,7 +32,7 @@ function send_message() {
 
     var params = "?" + "room=" + room + "&message=" + msg + "&from_net=1";
     $.ajax({
-      url: "http://cors.io/?http://cryptidzones.gearhostpreview.com/send_msg.php" + params
+      url: "https://cors.io/?https://cryptidzones.gearhostpreview.com/send_msg.php" + params
       }).done(function(data){});
 
 }
@@ -59,7 +59,7 @@ var count = 0;
 function pull_text() {
   var params = "?" + "room=" + room;
 
-  var url = "http://cors.io/?http://cryptidzones.gearhostpreview.com/phone_pull.php" + params;
+  var url = "https://cors.io/?https://cryptidzones.gearhostpreview.com/phone_pull.php" + params;
   var msgs = document.getElementById('messages');
   $.get(url, function(data, status){
     dat = data;
