@@ -73,7 +73,7 @@ function pull_text() {
   dat.forEach(
     function(item) {
       if(item.from_net == 1) {
-        msgs.innerHTML += '<div class="msg_container">' + '<div class="msg">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
+        msgs.innerText += '<div class="msg_container">' + '<div class="msg">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
       } else {
         msgs.innerHTML += '<div class="msg_container">' + '<div class="msg_other">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
       }
