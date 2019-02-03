@@ -47,10 +47,10 @@ window.setInterval(function(){
 function show_room() {
   var txtbox = document.getElementById('room');
   if (room == 0) {
-    txtbox.innerText = "not connected. enter room code";
+    txtbox.innerHTML = "not connected. enter room code";
     return;
   }
-  txtbox.innerText = "current room: " + room;
+  txtbox.innerHTML = "current room: " + room;
 }
 
 var dat;
@@ -64,7 +64,9 @@ function pull_text() {
   $.get(url, function(data, status){
     dat = data;
   });
+
   if (typeof dat !== 'undefined') {
+
     if(dat.length <= count) {
       return;
     }
@@ -78,12 +80,10 @@ function pull_text() {
         } else {
           msgs.innerHTML += '<div class="msg_container">' + '<div class="msg_other">' + '<div class="wavy">' + item.message + '</div>' + '</div>' + '</div>';
         }
-
       }
+    );
+    
   }
-
-
-  );
-    updateScroll();
-    redraw_text();
-  }
+  updateScroll();
+  redraw_text();
+}
