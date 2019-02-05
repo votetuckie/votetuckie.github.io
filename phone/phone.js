@@ -21,6 +21,10 @@ function setroom() {
       return;
     }
     room = rm;
+    var url = "http://cryptidzones.gear.host/reset_room.php?room=" + room;
+    $.ajax({
+      url: url
+      }).done(function(data){});
 }
 
 function send_message() {
