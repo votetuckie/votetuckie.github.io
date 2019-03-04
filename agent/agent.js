@@ -187,7 +187,12 @@ function Game() {
       if(this.is_done()) {
         this.p1.benny = true;
         console.log(this.p1);
-        display.innerText = this.p1.moves;
+        display.innerHtml += "<br>";
+        display.innerText = this.p1.color + ": " + this.p3.moves;
+        display.innerHtml += "<br>";
+        display.innerText += this.p2.color + ": " + this.p2.moves;
+        display.innerHtml += "<br>";
+        display.innerText += this.p3.color + ": " + this.p1.moves;
         return;
       }
       this.try_move(this.p2);
@@ -195,7 +200,12 @@ function Game() {
       if(this.is_done()) {
         this.p2.benny = true;
         console.log(this.p2);
-        display.innerText = this.p2.moves;
+        display.innerHtml += "<br>";
+        display.innerText = this.p2.color + ": " + this.p3.moves;
+        display.innerHtml += "<br>";
+        display.innerText += this.p3.color + ": " + this.p2.moves;
+        display.innerHtml += "<br>";
+        display.innerText += this.p1.color + ": " + this.p1.moves;
         return;
       }
       this.try_move(this.p3);
@@ -203,7 +213,12 @@ function Game() {
       if(this.is_done()) {
         this.p3.benny = true;
         console.log(this.p3);
-        display.innerText = this.p3.moves;
+        display.innerHtml += "<br>";
+        display.innerText = this.p3.color + ": " + this.p3.moves;
+        display.innerHtml += "<br>";
+        display.innerText += this.p2.color + ": " + this.p2.moves;
+        display.innerHtml += "<br>";
+        display.innerText += this.p1.color + ": " + this.p1.moves;
         return;
       } else {
         this.game_loop();
