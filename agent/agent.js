@@ -2,6 +2,9 @@ var seed = 1;
 var room = 0;
 var joined = false;
 var round = new Game();
+var plyr = new Player();
+
+var current_move = 0;
 
 function random(max) {
     var x = Math.sin(seed++) * 10000;
@@ -19,8 +22,74 @@ function join_room() {
     var display = document.getElementById('current_room');
     seed = rm;
     joined = true;
-    display.innerText = "current room: " + room;
+    display.innerText = "room: " + room;
     round.start();
+    $("#player_select").show();
+}
+
+function back() {
+  if(current_move == 0) {return;}
+  current_move -= 1;
+  show_moves();
+}
+
+function next() {
+  if(current_move == plyr.moves.length - 1) {return;}
+  current_move += 1;
+  show_moves();
+}
+
+function close_options() {
+  $("#player_select").hide();
+  $("#join_game").hide();
+}
+
+function clr(c) {
+  if(c == 1) {
+    c = "red";
+  } else if (c == 2) {
+    c = "green";
+  } else if (c == 3) {
+    c = "blue";
+  } else if (c == 4) {
+    c = "yellow";
+  }
+  close_options();
+  if (round.p1.color == c) {
+    plyr = round.p1;
+  }
+  else if (round.p2.color == c) {
+    plyr = round.p2;
+  }
+  else if (round.p3.color == c) {
+    plyr = round.p3;
+  } else {
+    document.getElementById('current_room').innerText = "FREE AGENT";
+    free_agent();
+    return;
+  }
+  console.log(plyr);
+  if(plyr.benny) {
+    document.getElementById('current_room').innerText = "THE BENNY";
+  } else {
+    document.getElementById('current_room').innerText = "INFORMANT";
+  }
+  show_moves();
+}
+
+function free_agent() {
+  $("#free_agent").show();
+}
+
+function show_moves() {
+  //show me your moves
+  $("#move_list").show();
+  document.getElementById("current_move").innerText = plyr.moves[current_move];
+  document.getElementById("current_action").innerText = " ";
+  document.getElementById("current_action").innerText = plyr.actions[current_move];
+
+  document.getElementById("turn_number").innerText = "Turn: " + (current_move + 1) + " / " + plyr.moves.length;
+
 }
 
 function Player (color) {
@@ -146,7 +215,6 @@ function Game() {
 
   this.start = function() {
     var free_agent = random(3);
-    console.log(free_agent);
     if(free_agent == 0) {
       this.p1 = new Player("green");
       this.p2 = new Player("blue");
@@ -186,39 +254,18 @@ function Game() {
       this.take_action(this.p1);
       if(this.is_done()) {
         this.p1.benny = true;
-        console.log(this.p1);
-        display.innerHtml += "<br>";
-        display.innerText = this.p1.color + ": " + this.p3.moves;
-        display.innerHtml += "<br>";
-        display.innerText += this.p2.color + ": " + this.p2.moves;
-        display.innerHtml += "<br>";
-        display.innerText += this.p3.color + ": " + this.p1.moves;
         return;
       }
       this.try_move(this.p2);
       this.take_action(this.p2);
       if(this.is_done()) {
         this.p2.benny = true;
-        console.log(this.p2);
-        display.innerHtml += "<br>";
-        display.innerText = this.p2.color + ": " + this.p3.moves;
-        display.innerHtml += "<br>";
-        display.innerText += this.p3.color + ": " + this.p2.moves;
-        display.innerHtml += "<br>";
-        display.innerText += this.p1.color + ": " + this.p1.moves;
         return;
       }
       this.try_move(this.p3);
       this.take_action(this.p3);
       if(this.is_done()) {
         this.p3.benny = true;
-        console.log(this.p3);
-        display.innerHtml += "<br>";
-        display.innerText = this.p3.color + ": " + this.p3.moves;
-        display.innerHtml += "<br>";
-        display.innerText += this.p2.color + ": " + this.p2.moves;
-        display.innerHtml += "<br>";
-        display.innerText += this.p1.color + ": " + this.p1.moves;
         return;
       } else {
         this.game_loop();
