@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'Hitchcock';
+  src:
+       url("Hitchcock.ttf")
+       format('truetype');
+}
+
 html {
   background-color: #434966;
   font-family: "Hitchcock";
+  src: url("Hitchcock.ttf");
   color: white;
   font-size: 20px;
   line-height: 1.3;
@@ -106,11 +114,11 @@ button {
 
   html {
     font-family: "Hitchcock";
-    font-size: 30px;
+    font-size: 35px;
   }
 
   input, button {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   #current_room {

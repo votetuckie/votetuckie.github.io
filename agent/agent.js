@@ -11,6 +11,23 @@ function random(max) {
     return Math.round((x - Math.floor(x)) * max);
 }
 
+function suggest() {
+  var quips = [
+    "Mutter something under your breath",
+    "Mutter something about another player",
+    "Ask if you can leave the room a moment, but stay in place",
+    "Move your piece without touching it with your hand",
+    "Point out what quadrant the GREEN player is currently in",
+    "Stretch your jaw in an overpronounced way",
+    "Stand up if able, move your piece, then sit back down",
+    "Pick up something from the table and inspect it before moving your piece",
+    "Look as if you are about to announce something, but don't",
+    ""
+  ];
+  var choice = quips[random(quips.length - 1)];
+  return choice;
+}
+
 function join_room() {
     var txtbox = document.getElementById('room_code');
     rm = Number(txtbox.value);
@@ -68,7 +85,6 @@ function clr(c) {
     free_agent();
     return;
   }
-  console.log(plyr);
   if(plyr.benny) {
     document.getElementById('current_room').innerText = "THE BENNY";
   } else {
@@ -87,7 +103,7 @@ function show_moves() {
   document.getElementById("current_move").innerText = plyr.moves[current_move];
   document.getElementById("current_action").innerText = " ";
   document.getElementById("current_action").innerText = plyr.actions[current_move];
-
+  document.getElementById("suggestion").innerText = plyr.suggestions[current_move];
   document.getElementById("turn_number").innerText = "Turn: " + (current_move + 1) + " / " + plyr.moves.length;
 
 }
@@ -100,6 +116,8 @@ function Player (color) {
 
   this.actions = [];
   this.moves = [];
+  this.suggestions = [];
+
   this.intel = 0;
   this.benny = false;
 
@@ -287,10 +305,18 @@ function Game() {
   }
 
   this.take_action = function(player) {
+    if(random(4) == 2) {
+      player.suggestions.push(suggest());
+    } else {
+      player.suggestions.push("");
+    }
     if(random(2) != 2) {
       player.actions.push("");
       return;
     }
+
+
+
     player.actions.push("Take Action");
 
     var action = player.action();
