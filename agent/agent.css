@@ -101,3 +101,24 @@ button {
   height: 100px;
   padding-top: 50px;
 }
+
+@media (hover:none), (hover:on-demand) {
+
+  html {
+    font-family: "Hitchcock";
+    font-size: 30px;
+  }
+
+  input, button {
+    font-size: 30px;
+  }
+
+  #current_room {
+    font-size: 55px;
+  }
+
+  #player_select input {
+    font-size: 70px;
+  }
+
+}
