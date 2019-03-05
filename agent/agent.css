@@ -45,7 +45,7 @@ button {
   transform: skew(5deg, 2deg);
   background-color: #965496;
   width: 80%;
-  height: 80px;
+  height: auto;
   margin-bottom: 20px;
   justify-content: center;
   margin-left: 10%;
@@ -53,6 +53,7 @@ button {
   text-align: center;
   font-size: 40px;
   padding-top: 20px;
+  padding-bottom: 20px;
   color: white;
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
 }

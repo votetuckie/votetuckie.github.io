@@ -22,7 +22,12 @@ function suggest() {
     "Stand up if able, move your piece, then sit back down",
     "Pick up something from the table and inspect it before moving your piece",
     "Look as if you are about to announce something, but don't",
-    ""
+    "Accuse someone who isn't playing the game of being the Free Agent",
+    "Put on a heavy thinking face",
+    "Question another player what their next move will be",
+    "Tap your feet a few times",
+    "Feint accidentally moving another player's piece, but correct it",
+    "Tap your fingers on the table before taking your action"
   ];
   var choice = quips[random(quips.length - 1)];
   return choice;
