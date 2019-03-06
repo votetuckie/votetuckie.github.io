@@ -376,6 +376,6 @@ window.setInterval(function(){
 window.setInterval(function(){
   if(random(2) == 1) {return;}
   $("#current_room").css({
-    'transform': 'skew(' + (random(3) + -1 * random(3)) + 'deg, ' + (random(3) + -1 * random(3)) + 'deg)'
+    'transform': 'skew(' + (random(3) + -1 * random(3)) + 'deg, ' + (random(4) + -1 * random(4)) + 'deg)'
   });
 }, 1000);
