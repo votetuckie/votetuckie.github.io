@@ -27,7 +27,11 @@ function suggest() {
     "Question another player what their next move will be",
     "Tap your feet a few times",
     "Feint accidentally moving another player's piece, but correct it",
-    "Tap your fingers on the table before taking your action"
+    "Tap your fingers on the table before taking your action",
+    "Tell the other players a joke",
+    "Start telling a joke but forget the punchline",
+    "Remind other players that it's your turn",
+    ""
   ];
   var choice = quips[random(quips.length - 1)];
   return choice;
