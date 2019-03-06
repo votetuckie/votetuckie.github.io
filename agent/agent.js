@@ -358,3 +358,24 @@ function Game() {
   }
 
 }
+
+window.setInterval(function(){
+  if(random(2) == 1) {return;}
+  $("#main button").css({
+    'transform': 'skew(' + (random(3) + -1 * random(3)) + 'deg, ' + (random(5) + -1 * random(5)) + 'deg)'
+  });
+}, 400);
+
+window.setInterval(function(){
+  if(random(1) == 1) {return;}
+  $("#player_select input").css({
+    'transform': 'skew(' + (random(3) + -1 * random(3)) + 'deg, ' + (random(5) + -1 * random(5)) + 'deg)'
+  });
+}, 750);
+
+window.setInterval(function(){
+  if(random(2) == 1) {return;}
+  $("#current_room").css({
+    'transform': 'skew(' + (random(3) + -1 * random(3)) + 'deg, ' + (random(3) + -1 * random(3)) + 'deg)'
+  });
+}, 1000);
