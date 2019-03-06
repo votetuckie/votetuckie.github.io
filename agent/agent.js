@@ -347,7 +347,7 @@ function Game() {
       var max = 0;
       max = Math.max(this.p1.intel, this.p2.intel);
       max = Math.max(max, this.p3.intel);
-      if(player.intel != max) {
+      if(player.intel < max) {
         player.intel += 1;
       }
     }
