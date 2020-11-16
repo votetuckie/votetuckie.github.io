@@ -1,0 +1,17 @@
+.portfolio-nav {
+    cursor: pointer;
+}
+
+
+.portfolio img {
+    max-width: 48%;
+    min-width: 25%;
+}
+
+@media (min-width: 700px) {
+
+    .portfolio img {
+        max-width: 32%;
+        min-width: 0px;
+    }
+}
