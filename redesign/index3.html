@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>its twkty</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/twky.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script src="js/twky.js" defer></script>
+</head>
+
+<body>
+    <div id="app">
+        <div class="row row-fill">
+
+            <div class="col-6">
+                <div class="row">
+                    <div class="card">
+                        <img src="img/profile.png">
+                        <div class="card-head card-head-bordered">depicted: {{names[name]}}</div>
+                        <div class="card-body">
+                            troublemaker indiet. i turn bad ideas into audacious video games
+                        </div>
+                    </div>
+                </div>
+                <div class="row j-center">
+                    <div class="card">
+                        <nav class="links-hover">
+                            <a href="https://twitter.com/bwuhhh">twinter</a>
+                            <a href="https://github.com/twuky">get hub</a>
+                            <a href="https://tuckie.itch.io/">itch.bo</a>
+                            <a href="mailto:hey@tuckie.zone">em@il</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-6">
+                <card header="about tuckie">
+                    <p>
+                        hihi, im a game designer, pixel artist, and web developer from the pacific 
+                        northwest. generally i come up with silly ideas and if they 
+                        make me laugh enough i expand them into subversive, abrasive, and playful projects.
+                    </p>
+                    <p>
+                        stuff ive worked on has been mentioned on rock paper shotgun which is kinda cool.
+                        ive also been selected for game showcases at emerald city comiccon, xoxofest, and
+                        plenty of portland's pigsquad events~~
+                    </p>
+                    <p>
+                        i also launched and run a new gamedev / devlog forum called 
+                        <a href="https://aregames.art">aregames.art</a>!! find ongoing progress
+                        on anything public of mine there, along with a other cool projects 
+                        from members of the community. come hang out :)
+                    </p>
+                </card>
+
+                <card header="how it works"> 
+                    <img src="img/process.png" alt="scheme">
+                </card>
+            </div>
+            
+        </div>
+        <div class="row row-fill">
+            <div class="card u-full-width" >
+                    <div class="card-head"> my stuff </div>
+                    <div class="row row-fill">
+                        <nav class="d-inline" v-for="item in ['pixel art', 'misc art', 'games', 'web dev', 'misc code']">
+                             <button class="sm" v-on:click="portfolio_page = item"
+                             v-bind:class="{'c-primary-d': portfolio_page == item}"
+                             >
+                                <span v-if="portfolio_page == item">> </span>
+                                {{item}}
+                                <span v-if="portfolio_page == item">< </span>
+                            </button>
+                        </nav>
+                    </div>
+
+                    <div class="row row-fill bg-light ">
+                        
+
+
+                        <div v-if="portfolio_page == 'pixel art'">
+                            <div class="portfolio d-inline">
+                                <h3>areas</h3>
+                                <img src="/img/portfolio/pixel/area1.png">
+                                <img src="/img/portfolio/pixel/area2.png">
+                                <img src="/img/portfolio/pixel/area3.png">
+                                <img src="/img/portfolio/pixel/area4.png">
+                                <img src="/img/portfolio/pixel/area5.png">
+                                <h3>animation</h3>
+                                <img src="/img/portfolio/pixel/anim1.gif">
+                                <img src="/img/portfolio/pixel/anim2.gif">
+                                <img src="/img/portfolio/pixel/anim3.gif">
+                                <img src="/img/portfolio/pixel/anim4.gif">
+                                <img src="/img/portfolio/pixel/anim5.gif">
+                                <img src="/img/portfolio/pixel/anim.gif">
+                                <h3>rpg enemies</h3>
+                                <img src="/img/portfolio/pixel/enemy1.png">
+                                <img src="/img/portfolio/pixel/enemy2.png">
+                                <img src="/img/portfolio/pixel/enemy3.png">
+                                <img src="/img/portfolio/pixel/enemy4.png">
+                                <img src="/img/portfolio/pixel/enemy5.png">
+                                <img src="/img/portfolio/pixel/enemy6.png">
+                                <img src="/img/portfolio/pixel/enemy7.png">
+                                <img src="/img/portfolio/pixel/enemy8.png">
+                                <img src="/img/portfolio/pixel/enemy9.png">
+                                <h3>tilesets</h3>
+                                <img src="/img/portfolio/pixel/tileset1.png">
+                                <img src="/img/portfolio/pixel/tileset2.png">
+                                <img src="/img/portfolio/pixel/tileset3.png">
+                                <img src="/img/portfolio/pixel/tileset4.png">
+                                <img src="/img/portfolio/pixel/tileset5.png">
+                                <img src="/img/portfolio/pixel/tileset6.png">
+                                <h3>trees</h3>
+                                <img src="/img/portfolio/pixel/tree1.png">
+                                <img src="/img/portfolio/pixel/tree2.png">
+                                <img src="/img/portfolio/pixel/tree3.png">
+                                <img src="/img/portfolio/pixel/tree4.png">
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

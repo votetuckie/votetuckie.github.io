@@ -1,0 +1,8 @@
+.portfolio-nav {
+    cursor: pointer;
+}
+
+.portfolio img {
+    max-width: 32%;
+    min-width: 0px;
+}
