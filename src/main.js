@@ -1,13 +1,21 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
+// @ts-ignore
 import App from './App'
 import Router from 'vue-router'
-Vue.use(Router)
 // eslint-disable-next-line
+// @ts-ignore
+// @ts-ignore
 import twky from './assets/css/twky.css'
 // eslint-disable-next-line
+// @ts-ignore
 import index from './assets/css/index.css'
+// @ts-ignore
+import About from './routes/About'
+// @ts-ignore
+import Portfolio from './routes/Portfolio'
+Vue.use(Router)
 
 Vue.config.productionTip = false
 
@@ -24,10 +32,6 @@ Vue.component('card', {
           </div>
       </div>`
 })
-
-
-import About from './routes/About'
-import Portfolio from './routes/Portfolio'
 
 var router = new Router({
   routes: [
